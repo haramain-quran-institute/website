@@ -1,0 +1,10 @@
+export { default as FacebookIcon } from "./Facebook";
+export { default as InstagramIcon } from "./Instagram";
+export { default as LinkedInIcon } from "./LinkedIn";
+export { default as TikTokIcon } from "./TikTok";
+export { default as TwitterIcon } from "./Twitter";
+export { default as WhatsAppIcon } from "./WhatsApp";
+export { default as YouTubeIcon } from "./YouTube";
+export { default as DiamondIcon } from "./Diamond";
+export { default as ArrowRightIcon } from "./arrow-right";
+export { default as HorizontalLineIcon } from "./horizontal-line";

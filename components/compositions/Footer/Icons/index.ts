@@ -1,0 +1,11 @@
+export { default as CrescentMoon } from "./CrescentMoon";
+export { default as Diamond } from "./Diamond";
+export { default as Hajj } from "./Hajj";
+export { default as Hotel } from "./Hotel";
+export { default as Kaaba } from "./Kaaba";
+export { default as Medal } from "./Medal";
+export { default as Mosque } from "./Mosque";
+export { default as PeopleArrows } from "./PeopleArrows";
+export { default as Plane } from "./Plane";
+export { default as ThumbsUp } from "./ThumbsUp";
+export { default as Trophy } from "./Trophy";
