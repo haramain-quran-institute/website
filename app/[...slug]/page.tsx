@@ -5,6 +5,8 @@ import { ContentPage } from "@/components/landing/content-page";
 import AboutPage from "@/components/about/AboutPage";
 import CoursePage from "@/components/course/CoursePage";
 import CoursesFeePage from "@/components/fees/CoursesFeePage";
+import FreeCoursesPage from "@/components/free-courses/FreeCoursesPage";
+import CourseSchedulePage from "@/components/schedule/CourseSchedulePage";
 import { getCoursePageData } from "@/data/course-pages";
 import { getNavigationPage, navigationPages } from "@/data/navigation";
 
@@ -41,6 +43,14 @@ export default async function NavigationPage({ params }: RouteProps) {
 
   if (page.url === "/fee-schedule/courses-fee") {
     return <CoursesFeePage />;
+  }
+
+  if (page.url === "/fee-schedule/course-schedule") {
+    return <CourseSchedulePage />;
+  }
+
+  if (page.url === "/fee-schedule/free-courses") {
+    return <FreeCoursesPage />;
   }
 
   if (page.url === "/about-us") {

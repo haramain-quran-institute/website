@@ -94,14 +94,11 @@ export default function ServicesSection({
         {/* Section Header */}
         <div className="flex w-full flex-col items-center justify-center text-center">
           <h2 className="font-heading text-[52px] font-medium leading-[1.05] tracking-tight text-[#0D463E]">
-            Our{" "}
-            <span className="font-['Libre_Baskerville'] font-normal italic">
-              Courses
-            </span>
+            {title}
           </h2>
 
           <p className="font-body mt-5 max-w-4xl text-[16px] font-normal leading-7 tracking-tight text-[#0D463E]">
-            Choose the right course and begin your Quran learning journey.
+            {description}
           </p>
         </div>
 

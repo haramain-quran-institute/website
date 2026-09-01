@@ -14,6 +14,7 @@ export interface OverviewCounter {
   value: string;
   label: string;
   icon: LucideIcon;
+  description?: string;
 }
 
 const courseCounters: OverviewCounter[] = [
@@ -65,7 +66,7 @@ export function OverviewComposition({
         </div>
 
         <div className="mt-16 grid grid-cols-2 gap-x-6 gap-y-10 border-t border-[#0D463E]/10 pt-12 min-[768px]:grid-cols-4 min-[1024px]:mt-20 min-[1024px]:gap-10 min-[1024px]:pt-14">
-          {counters.map(({ value, label, icon: Icon }) => (
+          {counters.map(({ value, label, description: counterDescription, icon: Icon }) => (
             <article key={label} className="border-b border-[#0D463E]/10 pb-7">
               <Icon className="size-8 text-[#0D6B65]" strokeWidth={1.8} />
               <p className="mt-5 font-heading text-3xl font-medium leading-none text-[#0D463E] min-[1024px]:text-[34px]">
@@ -74,6 +75,11 @@ export function OverviewComposition({
               <p className="mt-3 font-body text-xs leading-5 text-[#0D463E]/55 sm:text-sm">
                 {label}
               </p>
+              {counterDescription && (
+                <p className="mt-3 max-w-xs font-body text-xs leading-5 text-[#0D463E]/50">
+                  {counterDescription}
+                </p>
+              )}
             </article>
           ))}
         </div>

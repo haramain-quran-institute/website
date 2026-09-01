@@ -12,7 +12,12 @@ const GalleryPopup: React.FC<GalleryPopupProps> = ({ galleryData, title, descrip
 
   if (!isGalleryPopupOpen) return null;
 
-  let imageCounter = 0;
+  const sectionsWithStartIndex = galleryData.map((section, index) => ({
+    section,
+    startIndex: galleryData
+      .slice(0, index)
+      .reduce((total, previousSection) => total + previousSection.imgSrc.length, 0),
+  }));
 
   return (
     <AlertDialog defaultOpen>
@@ -31,13 +36,9 @@ const GalleryPopup: React.FC<GalleryPopupProps> = ({ galleryData, title, descrip
               {description && <p className="text-sm text-EbonyShadow/80 opacity-0 animate-fade-slide-down">{description}</p>}
             </div>
             <div className="size-full max-w-screen-md">
-              {galleryData.map((section) => {
-                const currentImageCounter = imageCounter;
-                imageCounter += section.imgSrc.length;
-                return (
-                  <GallerySection key={currentImageCounter} section={section} imageCounter={currentImageCounter} title="" />
-                );
-              })}
+              {sectionsWithStartIndex.map(({ section, startIndex }) => (
+                <GallerySection key={startIndex} section={section} imageCounter={startIndex} title="" />
+              ))}
             </div>
             <div className="min-h-16"></div>
           </div>

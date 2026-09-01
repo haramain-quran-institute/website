@@ -32,13 +32,8 @@ export default function IntroSection({
 
         {description && (
           <p className="text-caribbean-current mt-6 max-w-[860px] font-heading text-[20px] font-normal leading-[1.6] sm:text-[22px] min-[1024px]:text-[24px]">
-  At Haramain Quran Institute, we believe that{" "}
-  <span className="font-semibold">every parent deserves peace of mind</span>{" "}
-  knowing their child is learning the Quran with{" "}
-  <span className="font-semibold">proper guidance, love, and consistency.</span>{" "}
-  And every student deserves a learning experience that is{" "}
-  <span className="font-semibold">clear, personal, and meaningful.</span>
-</p>
+            {description}
+          </p>
         )}
       </div>
     </section>

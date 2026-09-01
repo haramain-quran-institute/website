@@ -45,6 +45,8 @@ export function LoaderProvider({ children }: LoaderProviderProps) {
 
       return () => clearTimeout(timer);
     }
+    // This effect must run on navigation, not when the initial timer completes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   const value = useMemo(() => ({ isLoading }), [isLoading]);

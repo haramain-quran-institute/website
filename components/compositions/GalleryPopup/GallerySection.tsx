@@ -48,7 +48,7 @@ const GallerySection: React.FC<GallerySectionProps> = ({ section, imageCounter }
       case "quad":
         return <QuadLayout images={section.imgSrc} altText={section.altText} ratio={section.ratio} startIndex={imageCounter} />;
       default:
-        return <div className="text-body_sm text-EbonyShadow-80">Layout type "{section.layout}" not implemented yet</div>;
+        return <div className="text-body_sm text-EbonyShadow-80">Layout type &quot;{section.layout}&quot; not implemented yet</div>;
     }
   };
   return (
