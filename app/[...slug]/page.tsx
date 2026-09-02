@@ -3,9 +3,11 @@ import { notFound } from "next/navigation";
 
 import { ContentPage } from "@/components/landing/content-page";
 import AboutPage from "@/components/about/AboutPage";
+import BlogsPage from "@/components/blogs/BlogsPage";
 import CoursePage from "@/components/course/CoursePage";
 import CoursesFeePage from "@/components/fees/CoursesFeePage";
 import FreeCoursesPage from "@/components/free-courses/FreeCoursesPage";
+import OurSessionsPage from "@/components/sessions/OurSessionsPage";
 import CourseSchedulePage from "@/components/schedule/CourseSchedulePage";
 import { getCoursePageData } from "@/data/course-pages";
 import { getNavigationPage, navigationPages } from "@/data/navigation";
@@ -51,6 +53,14 @@ export default async function NavigationPage({ params }: RouteProps) {
 
   if (page.url === "/fee-schedule/free-courses") {
     return <FreeCoursesPage />;
+  }
+
+  if (page.url === "/our-sessions") {
+    return <OurSessionsPage />;
+  }
+
+  if (page.url === "/blogs") {
+    return <BlogsPage />;
   }
 
   if (page.url === "/about-us") {

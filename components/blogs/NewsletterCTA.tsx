@@ -1,0 +1,10 @@
+"use client";
+
+import { CheckCircle2, Mail } from "lucide-react";
+import { FormEvent, useState } from "react";
+
+export default function NewsletterCTA() {
+  const [subscribed, setSubscribed] = useState(false);
+  const submit = (event: FormEvent<HTMLFormElement>) => { event.preventDefault(); setSubscribed(true); };
+  return <section className="w-full bg-[#FBF6EF] py-20 sm:py-24"><div className="container"><div className="relative overflow-hidden rounded-[8px] bg-[#071F1B] px-6 py-16 text-center sm:px-10 sm:py-20"><div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(208,168,108,0.2),transparent_45%)]" /><div className="relative mx-auto max-w-3xl"><Mail className="mx-auto size-10 text-[#D0A86C]" /><p className="mt-5 font-body text-xs font-bold uppercase tracking-[0.2em] text-[#D0A86C]">Newsletter</p><h2 className="mt-4 font-heading text-4xl font-medium leading-tight text-white sm:text-5xl">Stay Connected with Beneficial Knowledge</h2><p className="mx-auto mt-5 max-w-2xl font-body text-base leading-7 text-white/65">Receive new Quran learning articles, practical Islamic guidance, helpful reminders, and institute updates directly in your inbox.</p>{subscribed ? <div className="mx-auto mt-9 flex max-w-md items-center justify-center gap-3 rounded-[8px] bg-white/10 px-5 py-4 font-body text-sm text-white"><CheckCircle2 className="size-5 text-[#D0A86C]" /> Thank you for joining our newsletter.</div> : <form onSubmit={submit} className="mx-auto mt-9 flex max-w-xl flex-col gap-3 sm:flex-row"><label htmlFor="newsletter-email" className="sr-only">Email address</label><input id="newsletter-email" type="email" required placeholder="Enter your email address" className="min-h-12 flex-1 rounded-[6px] border border-white/15 bg-white/10 px-4 font-body text-sm text-white outline-none placeholder:text-white/45 focus:border-[#D0A86C]" /><button type="submit" className="min-h-12 rounded-[6px] bg-[#D0A86C] px-7 font-body text-sm font-bold text-[#071F1B] transition-colors hover:bg-[#FBF6EF]">Subscribe</button></form>}</div></div></div></section>;
+}
