@@ -4,10 +4,16 @@ import { notFound } from "next/navigation";
 import { ContentPage } from "@/components/landing/content-page";
 import AboutPage from "@/components/about/AboutPage";
 import BlogsPage from "@/components/blogs/BlogsPage";
+import CareerPage from "@/components/career/CareerPage";
 import CoursePage from "@/components/course/CoursePage";
 import CoursesFeePage from "@/components/fees/CoursesFeePage";
 import FreeCoursesPage from "@/components/free-courses/FreeCoursesPage";
+import FAQPage from "@/components/faq-page/FAQPage";
 import OurSessionsPage from "@/components/sessions/OurSessionsPage";
+import TeachersPage from "@/components/teachers/TeachersPage";
+import BookTrialPage from "@/components/book-trial/BookTrialPage";
+import ResourcePage from "@/components/resources/ResourcePage";
+import { getResourcePage } from "@/components/resources/resource-data";
 import CourseSchedulePage from "@/components/schedule/CourseSchedulePage";
 import { getCoursePageData } from "@/data/course-pages";
 import { getNavigationPage, navigationPages } from "@/data/navigation";
@@ -61,6 +67,27 @@ export default async function NavigationPage({ params }: RouteProps) {
 
   if (page.url === "/blogs") {
     return <BlogsPage />;
+  }
+
+  if (page.url === "/career") {
+    return <CareerPage />;
+  }
+
+  if (page.url === "/faqs") {
+    return <FAQPage />;
+  }
+
+  if (page.url === "/our-teachers") {
+    return <TeachersPage />;
+  }
+
+  if (page.url === "/book-free-trial") {
+    return <BookTrialPage />;
+  }
+
+  if (page.section === "Resources") {
+    const resourcePage = getResourcePage(page.url);
+    if (resourcePage) return <ResourcePage page={resourcePage} />;
   }
 
   if (page.url === "/about-us") {
