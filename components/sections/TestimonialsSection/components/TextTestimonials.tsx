@@ -104,31 +104,6 @@ export default function TextTestimonials({
             <ChevronRight className="size-4 !text-[#0D463E]" />
           </Button>
         </div>
-
-        {/* MOBILE ARROWS */}
-        <div className="mt-4 flex justify-center gap-2 lg:hidden">
-          <Button
-            type="button"
-            variant="iconOnly"
-            size="iconOnly"
-            onClick={scrollPrev}
-            aria-label="Previous testimonial"
-            className="!h-8 !w-8 !border-0 !bg-white !shadow-md hover:!bg-white"
-          >
-            <ChevronLeft className="size-3.5 !text-[#0D463E]" />
-          </Button>
-
-          <Button
-            type="button"
-            variant="iconOnly"
-            size="iconOnly"
-            onClick={scrollNext}
-            aria-label="Next testimonial"
-            className="!h-8 !w-8 !border-0 !bg-white !shadow-md hover:!bg-white"
-          >
-            <ChevronRight className="size-3.5 !text-[#0D463E]" />
-          </Button>
-        </div>
       </div>
     </div>
   );

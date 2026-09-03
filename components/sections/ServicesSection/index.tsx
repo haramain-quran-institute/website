@@ -93,7 +93,7 @@ export default function ServicesSection({
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="flex w-full flex-col items-center justify-center text-center">
-          <h2 className="font-heading text-[52px] font-medium leading-[1.05] tracking-tight text-[#0D463E]">
+          <h2 className="font-heading text-[40px] font-medium leading-[1.05] tracking-tight text-[#0D463E] min-[576px]:text-[46px] min-[768px]:text-[52px]">
             {title}
           </h2>
 

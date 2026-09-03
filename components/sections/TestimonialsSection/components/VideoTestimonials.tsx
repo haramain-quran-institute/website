@@ -24,8 +24,8 @@ export default function VideoTestimonials({ item }: { item: VideoTestimonialsDat
     <>
       <section id="student-testimonials" className="w-full bg-[#FBF6EF] py-24 sm:py-28 lg:py-[106px]">
         <div className="mx-auto w-full max-w-[1490px] px-6 lg:px-8">
-          <div className="grid items-center gap-16 lg:grid-cols-12 lg:gap-28">
-            <div className="lg:col-span-7 lg:-translate-x-4">
+          <div className="grid items-center gap-16 min-[992px]:grid-cols-12 min-[992px]:gap-20 min-[1200px]:gap-28">
+            <div className="min-[992px]:col-span-7 min-[992px]:-translate-x-4">
               <div className="flex w-full flex-col items-start gap-10">
                 <div className="flex w-full flex-col gap-4">
                   <h2 className="max-w-4xl font-heading text-5xl font-medium leading-[1.05] tracking-tight text-[#0D463E] sm:text-6xl lg:text-[3rem] xl:text-[5rem]">
@@ -41,7 +41,7 @@ export default function VideoTestimonials({ item }: { item: VideoTestimonialsDat
               </div>
             </div>
 
-            <div className="flex justify-center lg:col-span-5 lg:translate-x-6 lg:justify-end">
+            <div className="flex justify-center min-[992px]:col-span-5 min-[992px]:translate-x-6 min-[992px]:justify-end">
               <div className="w-full max-w-[504px]">
                 <VideoTestimonialCard
                   item={item.testimonial}

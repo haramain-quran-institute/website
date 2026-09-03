@@ -10,10 +10,18 @@ import BackgroundImage from "@/assets/FAQ.jpg";
 export default function FooterCTA() {
   const { openFormPopup } = useContext(FormPopupContext);
 
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const [scrollProgress, setScrollProgress] = useState(0.1667);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const canAnimate = window.matchMedia(
+      "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
+    ).matches;
+
+    if (!canAnimate) {
+      return;
+    }
+
     const handleScroll = () => {
       if (!containerRef.current) return;
 
@@ -59,7 +67,7 @@ export default function FooterCTA() {
             transform: `scale(${scale})`,
             transition: "transform 0.3s ease-out",
           }}
-          className="relative grid min-h-[420px] w-full place-content-stretch place-items-stretch overflow-hidden rounded-md"
+          className="relative grid min-h-[380px] w-full place-content-stretch place-items-stretch overflow-hidden rounded-md min-[576px]:min-h-[420px]"
         >
           {/* BACKGROUND IMAGE */}
           <Image
@@ -95,7 +103,7 @@ export default function FooterCTA() {
           {/* CONTENT */}
           <div className="relative z-10 flex w-full flex-col items-center justify-center gap-9 px-6 py-14 text-center sm:px-8 sm:py-24 min-[1024px]:py-32">
             <div className="flex flex-col gap-3">
-              <h2 className="font-heading text-[40px] font-semibold leading-[1.02] tracking-tight text-[#0D463E] text-pretty sm:text-[48px]">
+              <h2 className="font-heading text-[36px] font-semibold leading-[1.04] tracking-tight text-[#0D463E] text-pretty min-[576px]:text-[42px] min-[768px]:text-[48px]">
   Begin Your{" "}
   <span className="font-['Libre_Baskerville'] font-medium italic">
     Sacred

@@ -59,7 +59,7 @@ function DesktopNavigation() {
                   {section.title}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className={cn("grid w-[620px] gap-2 p-5", section.subItems.length > 3 && "grid-cols-2")}>
+                  <ul className={cn("grid w-[620px] gap-2 p-5", (section.subItems.length > 3 || section.title === "Fee & Schedule" || section.title === "Contact Us") && "grid-cols-2")}>
                     {section.subItems.map((item) => (
                       <li key={item.url}>
                         <Link

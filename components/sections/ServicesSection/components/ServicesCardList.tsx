@@ -11,7 +11,7 @@ export default function ServicesCardList({
   const hasTwoItems = services.length === 2;
 
   return (
-    <div className={`grid w-full grid-cols-1 gap-5 sm:gap-6 ${hasTwoItems ? "lg:grid-cols-2" : "lg:grid-cols-3"}`}>
+    <div className={`grid w-full grid-cols-1 gap-5 min-[576px]:gap-6 ${hasTwoItems ? "min-[768px]:grid-cols-2" : "min-[992px]:grid-cols-3"}`}>
       {services.map((service, index) => {
         const isFirst = index === 0;
         const isLast = index === services.length - 1;
@@ -20,8 +20,8 @@ export default function ServicesCardList({
           <div
             key={`${service.number}-${service.title}`}
             className={[
-              !hasTwoItems && isFirst ? "lg:col-span-2" : "",
-              !hasTwoItems && isLast ? "lg:col-start-2 lg:col-span-2" : "",
+              !hasTwoItems && isFirst ? "min-[992px]:col-span-2" : "",
+              !hasTwoItems && isLast ? "min-[992px]:col-start-2 min-[992px]:col-span-2" : "",
             ]
               .filter(Boolean)
               .join(" ")}

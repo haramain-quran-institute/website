@@ -16,6 +16,15 @@ export default function FeatureGrid({ features }: FeatureGridProps) {
   const frameRef = useRef<number | null>(null);
 
   useEffect(() => {
+    const canAnimate = window.matchMedia(
+      "(min-width: 1024px) and (prefers-reduced-motion: no-preference)",
+    ).matches;
+
+    if (!canAnimate) {
+      if (middleRef.current) middleRef.current.style.transform = "none";
+      return;
+    }
+
     const updateTarget = () => {
       const element = middleRef.current;
 

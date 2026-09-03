@@ -12,6 +12,7 @@ import EditorialGrid from "../layouts/EditorialGrid";
 import LuxuryShowcase from "../layouts/LuxuryShowcase";
 import ModernMosaic from "../layouts/ModernMosaic";
 import QuadHarmony from "../layouts/QuadHarmony";
+import MediaRenderer from "./MediaRenderer";
 
 export default function GalleryCarousel({
   slides,
@@ -111,18 +112,32 @@ export default function GalleryCarousel({
     }
   };
 
-  const mobileRatio = ratio * 1.4;
+  const renderMobileLayout = (slide: GallerySlide) => (
+    <div className="grid grid-cols-2 gap-3 min-[576px]:gap-4 min-[992px]:hidden">
+      {slide.media.map((item, index) => (
+        <div
+          key={index}
+          className="relative aspect-[4/3] min-w-0 overflow-hidden rounded-lg"
+        >
+          <MediaRenderer
+            item={item}
+            index={index}
+            onOpen={(mediaIndex) => openLightbox(slide.media, mediaIndex)}
+          />
+        </div>
+      ))}
+    </div>
+  );
 
   if (slides.length === 1) {
     return (
       <>
-        <AspectRatio
-          ratio={mobileRatio}
-          className="md:ratio-[var(--desktop)] w-full"
-          style={{ ["--desktop" as any]: ratio }}
-        >
-          {renderLayout(slides[0])}
-        </AspectRatio>
+        {renderMobileLayout(slides[0])}
+        <div className="hidden min-[992px]:block">
+          <AspectRatio ratio={ratio} className="w-full">
+            {renderLayout(slides[0])}
+          </AspectRatio>
+        </div>
 
         <GalleryLightboxDialog
           media={lightboxMedia}
@@ -148,13 +163,12 @@ export default function GalleryCarousel({
                   key={index}
                   className="min-w-0 flex-[0_0_100%]"
                 >
-                  <AspectRatio
-                    ratio={mobileRatio}
-                    className="md:ratio-[var(--desktop)] w-full"
-                    style={{ ["--desktop" as any]: ratio }}
-                  >
-                    {renderLayout(slide)}
-                  </AspectRatio>
+                  {renderMobileLayout(slide)}
+                  <div className="hidden min-[992px]:block">
+                    <AspectRatio ratio={ratio} className="w-full">
+                      {renderLayout(slide)}
+                    </AspectRatio>
+                  </div>
                 </div>
               ))}
             </div>
@@ -174,7 +188,8 @@ export default function GalleryCarousel({
                 pointer-events-auto
                 absolute
                 left-0
-                top-[calc(50%+18px)]
+                top-1/2
+                min-[992px]:top-[calc(50%+18px)]
                 z-[9999]
                 flex
                 size-[36px]
@@ -212,7 +227,8 @@ export default function GalleryCarousel({
                 pointer-events-auto
                 absolute
                 right-0
-                top-[calc(50%+18px)]
+                top-1/2
+                min-[992px]:top-[calc(50%+18px)]
                 z-[9999]
                 flex
                 size-[36px]
