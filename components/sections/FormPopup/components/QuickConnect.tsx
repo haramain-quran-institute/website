@@ -1,24 +1,25 @@
 import { Phone, Mail } from "lucide-react";
 import WhatsApp from "@/assets/Icons/WhatsApp";
+import { instituteContact } from "@/data/site-contact";
 
 const contactMethods = [
   {
     id: "phone",
     icon: Phone,
     label: "Direct Line",
-    href: "tel:+923041110786",
+    href: instituteContact.whatsappHref,
   },
   {
     id: "whatsapp",
     icon: WhatsApp,
     label: "WhatsApp",
-    href: "https://wa.me/923041110786",
+    href: instituteContact.whatsappHref,
   },
   {
     id: "email",
     icon: Mail,
-    label: "info@alfursan.digital",
-    href: "mailto:info@alfursan.digital",
+    label: instituteContact.email,
+    href: instituteContact.emailHref,
   },
 ];
 
@@ -29,8 +30,8 @@ export function QuickConnect() {
         <a
           key={id}
           href={href}
-          target={id === "whatsapp" ? "_blank" : undefined}
-          rel={id === "whatsapp" ? "noopener noreferrer" : undefined}
+          target={href.startsWith("https://") ? "_blank" : undefined}
+          rel={href.startsWith("https://") ? "noopener noreferrer" : undefined}
           className="group text-smoky-black/60 hover:text-caribbean-current inline-flex items-center gap-2 transition-colors"
         >
           <Icon className="h-4 w-4" strokeWidth={1.5} />

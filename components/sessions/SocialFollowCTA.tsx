@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-import { FacebookIcon, InstagramIcon, LinkedInIcon, TikTokIcon, YouTubeIcon } from "@/assets/Icons";
+import { FacebookIcon, InstagramIcon, LinkedInIcon, TikTokIcon } from "@/assets/Icons";
+import { instituteSocialLinks } from "@/data/site-contact";
 
 const socials = [
-  { name: "YouTube", href: "https://youtube.com/", Icon: YouTubeIcon },
-  { name: "Facebook", href: "https://facebook.com/", Icon: FacebookIcon },
-  { name: "Instagram", href: "https://instagram.com/", Icon: InstagramIcon },
-  { name: "TikTok", href: "https://tiktok.com/", Icon: TikTokIcon },
-  { name: "LinkedIn", href: "https://linkedin.com/", Icon: LinkedInIcon },
+  { name: "Facebook", href: instituteSocialLinks.facebook, Icon: FacebookIcon },
+  { name: "Instagram", href: instituteSocialLinks.instagram, Icon: InstagramIcon },
+  { name: "TikTok", href: instituteSocialLinks.tiktok, Icon: TikTokIcon },
+  { name: "LinkedIn", href: instituteSocialLinks.linkedin, Icon: LinkedInIcon },
 ];
 
 export default function SocialFollowCTA() {

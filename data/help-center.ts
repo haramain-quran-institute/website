@@ -1,3 +1,5 @@
+import { instituteContact } from "@/data/site-contact";
+
 export interface BranchContact {
   code: "KSA" | "UAE" | "PAK";
   name: string;
@@ -9,16 +11,16 @@ export interface BranchContact {
 }
 
 const supportEmail =
-  process.env.HARAMAIN_SUPPORT_EMAIL || "info@haramainquraninstitute.com";
+  process.env.HARAMAIN_SUPPORT_EMAIL || instituteContact.email;
 
 export const helpCenterBranches: BranchContact[] = [
   {
     code: "KSA",
     name: "Kingdom of Saudi Arabia",
     email: process.env.HARAMAIN_KSA_EMAIL || supportEmail,
-    phone: process.env.HARAMAIN_KSA_PHONE,
-    whatsapp: process.env.HARAMAIN_KSA_WHATSAPP,
-    location: process.env.HARAMAIN_KSA_LOCATION || "Kingdom of Saudi Arabia",
+    phone: process.env.HARAMAIN_KSA_PHONE || instituteContact.phoneDisplay,
+    whatsapp: process.env.HARAMAIN_KSA_WHATSAPP || instituteContact.phoneDisplay,
+    location: process.env.HARAMAIN_KSA_LOCATION || instituteContact.address,
     timezone: "Arabia Standard Time (UTC+3)",
   },
   {

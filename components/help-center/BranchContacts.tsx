@@ -3,10 +3,6 @@ import { Clock3, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 
 import { helpCenterBranches } from "@/data/help-center";
 
-function phoneHref(phone: string) {
-  return `tel:${phone.replace(/[^+\d]/g, "")}`;
-}
-
 function whatsappHref(phone: string) {
   return `https://wa.me/${phone.replace(/\D/g, "")}`;
 }
@@ -54,7 +50,7 @@ export default function BranchContacts() {
                 </ContactRow>
                 <ContactRow icon={Phone} label="Phone">
                   {branch.phone ? (
-                    <Link className="hover:text-[#0D706D]" href={phoneHref(branch.phone)}>{branch.phone}</Link>
+                    <Link className="hover:text-[#0D706D]" href={whatsappHref(branch.phone)} target="_blank" rel="noopener noreferrer">{branch.phone}</Link>
                   ) : (
                     <Link className="hover:text-[#0D706D]" href="#support-form">Request a call</Link>
                   )}

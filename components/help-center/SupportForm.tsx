@@ -31,6 +31,7 @@ export default function SupportForm() {
       subject: String(form.get("subject") || ""),
       message: String(form.get("message") || ""),
       preferredReply,
+      sourcePage: window.location.pathname,
     });
 
     setPending(false);

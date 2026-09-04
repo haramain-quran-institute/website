@@ -1001,7 +1001,7 @@ export default function GlobalForm({ source }: GlobalFormProps) {
                       <Input
                         className="!font-bricolage !text-[#161513] placeholder:!text-[#777571]"
                         type="tel"
-                        placeholder="+92 300 0000000"
+                        placeholder="+966 59 617 7943"
                         {...field}
                       />
                     </FormControl>

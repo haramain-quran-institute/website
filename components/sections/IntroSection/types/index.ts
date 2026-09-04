@@ -21,4 +21,5 @@ export interface IntroSectionProps {
   showDivider?: boolean;
   eyebrow?: string;
   icon?: StaticImageData;
+  compactBottom?: boolean;
 }

@@ -15,7 +15,7 @@ export default function FooterCTA() {
 
   useEffect(() => {
     const canAnimate = window.matchMedia(
-      "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
+      "(prefers-reduced-motion: no-preference)",
     ).matches;
 
     if (!canAnimate) {

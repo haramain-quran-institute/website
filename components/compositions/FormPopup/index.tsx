@@ -16,23 +16,13 @@ import {
 
 import { FormPopupContext } from "@/context/FormPopupContext";
 import GlobalForm from "./GlobalForm";
+import { instituteContact } from "@/data/site-contact";
 
 import { ConversionSource } from "../CookieConsent/config/conversionConfig";
 
 type FormPopupProps = {
   source: ConversionSource;
 };
-
-/*
-|--------------------------------------------------------------------------
-| Haramain Contact Details
-|--------------------------------------------------------------------------
-| Replace these two numbers when you have the official numbers.
-*/
-const DIRECT_LINE = "+923000000000";
-const WHATSAPP_NUMBER = "923000000000";
-
-const EMAIL = "email.hqinstitute@gmail.com";
 
 export default function FormPopup({
   source,
@@ -48,7 +38,7 @@ export default function FormPopup({
 
   const copyEmail = async () => {
     try {
-      await navigator.clipboard.writeText(EMAIL);
+      await navigator.clipboard.writeText(instituteContact.email);
 
       setCopied(true);
 
@@ -120,7 +110,9 @@ export default function FormPopup({
 
                   {/* DIRECT LINE */}
                   <a
-                    href={`tel:${DIRECT_LINE}`}
+                    href={instituteContact.whatsappHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="group flex items-center gap-3 transition-colors hover:text-[#0D463E]"
                   >
                     <Phone className="size-5 shrink-0 text-[#777571] transition-colors group-hover:text-[#0D463E]" />
@@ -132,7 +124,7 @@ export default function FormPopup({
 
                   {/* WHATSAPP */}
                   <a
-                    href={`https://wa.me/${WHATSAPP_NUMBER}`}
+                    href={instituteContact.whatsappHref}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-center gap-3 transition-colors hover:text-[#0D463E]"
@@ -147,13 +139,13 @@ export default function FormPopup({
                   {/* EMAIL + COPY */}
                   <div className="flex min-w-0 items-center gap-3">
                     <a
-                      href={`mailto:${EMAIL}`}
+                      href={instituteContact.emailHref}
                       className="group flex min-w-0 items-center gap-3"
                     >
                       <Mail className="size-5 shrink-0 text-[#777571] transition-colors group-hover:text-[#0D463E]" />
 
                       <span className="truncate font-bricolage text-body_xxs text-[#777571] transition-colors group-hover:text-[#0D463E]">
-                        {EMAIL}
+                        {instituteContact.email}
                       </span>
                     </a>
 

@@ -8,6 +8,7 @@ export default function FeaturesGridSection({
   features,
   noMargin = false,
   noBg = false,
+  compactTop = false,
 }: FeaturesGridSectionProps) {
   const marginClasses = noMargin ? "my-0" : "my-28 sm:my-32 md:my-36 lg:my-40";
 
@@ -16,7 +17,13 @@ export default function FeaturesGridSection({
       id={id}
       className={`relative w-full overflow-hidden ${
         noBg ? "bg-transparent" : "bg-[#FBF6EF]"
-      } ${!noBg ? "py-24 sm:py-28 md:py-32 lg:py-36" : marginClasses}`}
+      } ${
+        !noBg
+          ? compactTop
+            ? "pb-24 pt-10 sm:pb-28 sm:pt-10 md:pb-32 md:pt-12 lg:pb-36 lg:pt-14"
+            : "py-24 sm:py-28 md:py-32 lg:py-36"
+          : marginClasses
+      }`}
     >
       <div className="container relative z-10 flex flex-col items-center">
         {/* Heading */}

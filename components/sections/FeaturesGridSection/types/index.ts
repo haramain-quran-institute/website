@@ -20,4 +20,5 @@ export interface FeaturesGridSectionProps {
   features: FeatureItem[];
   noBg?: boolean;
   noMargin?: boolean;
+  compactTop?: boolean;
 }

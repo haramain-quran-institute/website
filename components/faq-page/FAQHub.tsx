@@ -54,7 +54,7 @@ const allFaqs: CategorizedFAQ[] = [
   faq("Technical Support", "What should I do if I cannot join a lesson?", "Check your connection and meeting link, restart the app if needed, and contact support promptly so the teacher knows you are experiencing a problem."),
   faq("Technical Support", "Why is my microphone or camera not working?", "Confirm browser or app permissions, select the correct device in call settings, close other apps using it, and restart the browser or device if necessary."),
   faq("Technical Support", "Can I download resources on a phone?", "Yes. Standard PDF files can be downloaded and opened using the browser or a PDF reader on most modern phones and tablets."),
-  faq("General Support", "Where is Haramain Quran Institute based?", "Haramain Quran Institute is based in Islamabad, Pakistan, while serving online learners across multiple countries and time zones."),
+  faq("General Support", "Where is Haramain Quran Institute based?", "Haramain Quran Institute is based in Makkah Al-Mukarramah, KSA, while serving online learners across multiple countries and time zones."),
   faq("General Support", "Are classes one-to-one or group based?", "The main learning experience is personalized one-to-one instruction. Any group or free-course format will be clearly identified during registration."),
   faq("General Support", "How can I contact the institute?", "Use the Free Trial, Help Center, Start Chat, phone, WhatsApp, or email options shown across the website."),
   faq("General Support", "Can parents receive progress updates?", "Parents can discuss learning goals and progress with the institute. The exact update process depends on the student's course and plan."),

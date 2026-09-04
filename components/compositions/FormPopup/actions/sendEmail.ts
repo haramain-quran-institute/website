@@ -3,6 +3,7 @@
 import React from "react";
 import { Resend } from "resend";
 import GlobalFormEmail from "../emails/global-form-template";
+import { instituteContact } from "@/data/site-contact";
 
 const resend = new Resend(process.env.RESEND_API_KEY!);
 
@@ -76,7 +77,7 @@ export async function sendEmail(formData: FormData) {
 
     const FROM_EMAIL = "noreply@haramainquraninstitute.com";
 
-    const TO_EMAIL = "email.hqinstitute@gmail.com";
+    const TO_EMAIL = instituteContact.email;
 
     const response = await resend.emails.send({
       from: `${SENDER_NAME} <${FROM_EMAIL}>`,

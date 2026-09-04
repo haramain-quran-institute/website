@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { FAQSectionProps } from "./types";
 import FAQs from "./components/FAQs";
 import { Button } from "@/components/ui/button";
+import { instituteContact } from "@/data/site-contact";
 
 export default function FAQSection({
   id = "faq",
@@ -25,14 +26,16 @@ export default function FAQSection({
             <p className="mt-2 max-w-2xl font-body text-base font-normal leading-7 tracking-tight text-[#0D463E] sm:text-lg sm:leading-8">
   If you have any further questions, please feel free to contact us by{" "}
   <Link
-    href="tel:+923001234567"
+    href={instituteContact.whatsappHref}
+    target="_blank"
+    rel="noopener noreferrer"
     className="font-semibold text-[#0D463E] transition-opacity hover:opacity-70"
   >
     Phone
   </Link>{" "}
   or by sending us a message on{" "}
   <Link
-    href="https://wa.me/923001234567"
+    href={instituteContact.whatsappHref}
     target="_blank"
     rel="noopener noreferrer"
     className="font-semibold text-[#0D463E] transition-opacity hover:opacity-70"

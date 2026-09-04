@@ -8,14 +8,15 @@ import {
   TikTokIcon,
   YouTubeIcon,
 } from "@/assets/Icons";
+import { instituteContact, instituteSocialLinks } from "@/data/site-contact";
 import type { FooterProps } from "./types/links";
 
 const socialLinks = [
-  { title: "Facebook", href: "https://facebook.com/", Icon: FacebookIcon },
-  { title: "Instagram", href: "https://instagram.com/", Icon: InstagramIcon },
-  { title: "LinkedIn", href: "https://linkedin.com/", Icon: LinkedInIcon },
-  { title: "YouTube", href: "https://youtube.com/", Icon: YouTubeIcon },
-  { title: "TikTok", href: "https://tiktok.com/", Icon: TikTokIcon },
+  { title: "Facebook", href: instituteSocialLinks.facebook, Icon: FacebookIcon },
+  { title: "Instagram", href: instituteSocialLinks.instagram, Icon: InstagramIcon },
+  { title: "LinkedIn", href: instituteSocialLinks.linkedin, Icon: LinkedInIcon },
+  { title: "YouTube", href: instituteSocialLinks.youtube, Icon: YouTubeIcon },
+  { title: "TikTok", href: instituteSocialLinks.tiktok, Icon: TikTokIcon },
 ];
 
 export default function FooterMain({ footerItemsData }: FooterProps) {
@@ -46,27 +47,29 @@ export default function FooterMain({ footerItemsData }: FooterProps) {
               <div className="flex items-start gap-4">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#0D706D]" />
                 <p className="font-body text-[15px] leading-6 text-[#161513]/75">
-                  Islamabad, Pakistan
+                  {instituteContact.address}
                 </p>
               </div>
 
               <div className="flex items-center gap-4">
                 <Phone className="h-5 w-5 shrink-0 text-[#0D706D]" />
                 <Link
-                  href="tel:+923000000000"
+                  href={instituteContact.whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="font-body text-[15px] text-[#161513]/70 transition-colors hover:text-[#0D463E]"
                 >
-                  +92 300 0000000
+                  {instituteContact.phoneDisplay}
                 </Link>
               </div>
 
               <div className="flex items-center gap-4">
                 <Mail className="h-5 w-5 shrink-0 text-[#0D706D]" />
                 <Link
-                  href="mailto:info@haramainquraninstitute.com"
+                  href={instituteContact.emailHref}
                   className="break-all font-body text-[15px] text-[#161513]/70 transition-colors hover:text-[#0D463E]"
                 >
-                  info@haramainquraninstitute.com
+                  {instituteContact.email}
                 </Link>
               </div>
             </address>
@@ -75,7 +78,7 @@ export default function FooterMain({ footerItemsData }: FooterProps) {
           <div className="grid grid-cols-2 gap-x-10 gap-y-12 min-[700px]:grid-cols-4 min-[1280px]:gap-x-14">
             {footerItemsData.map((column) => (
               <div key={column.title} className="flex flex-col gap-5">
-                <h3 className="font-accent text-[20px] font-normal leading-tight text-[#0D463E] min-[1280px]:text-[23px]">
+                <h3 className="whitespace-nowrap font-accent text-[17px] font-normal leading-tight text-[#0D463E] min-[1280px]:text-[20px]">
                   {column.title}
                 </h3>
 

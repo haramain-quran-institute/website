@@ -5,11 +5,16 @@ export default function IntroSection({
   title,
   description,
   eyebrow,
+  compactBottom = false,
 }: IntroSectionProps) {
   return (
     <section
       id={id}
-      className="w-full bg-[#FBF6EF] py-16 md:py-20 lg:min-h-[520px] lg:pt-28 lg:pb-24"
+      className={`w-full bg-[#FBF6EF] pt-16 md:pt-20 lg:pt-28 ${
+        compactBottom
+          ? "pb-7 md:pb-8 lg:pb-10"
+          : "pb-16 md:pb-20 lg:min-h-[520px] lg:pb-24"
+      }`}
     >
       <div className="container mx-auto flex flex-col items-center text-center">
         {eyebrow && (

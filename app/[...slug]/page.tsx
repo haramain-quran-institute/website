@@ -17,8 +17,11 @@ import HelpCenterPage from "@/components/help-center/HelpCenterPage";
 import ResourcePage from "@/components/resources/ResourcePage";
 import { getResourcePage } from "@/components/resources/resource-data";
 import CourseSchedulePage from "@/components/schedule/CourseSchedulePage";
+import PolicyPage from "@/components/policies/PolicyPage";
+import SitemapPage from "@/components/sitemap/SitemapPage";
 import { getCoursePageData } from "@/data/course-pages";
 import { getNavigationPage, navigationPages } from "@/data/navigation";
+import { getPolicyPage } from "@/data/policies";
 
 interface RouteProps {
   params: Promise<{ slug: string[] }>;
@@ -93,6 +96,15 @@ export default async function NavigationPage({ params }: RouteProps) {
 
   if (page.url === "/help-center") {
     return <HelpCenterPage />;
+  }
+
+  const policy = getPolicyPage(page.url);
+  if (policy) {
+    return <PolicyPage policy={policy} />;
+  }
+
+  if (page.url === "/sitemap") {
+    return <SitemapPage />;
   }
 
   if (page.section === "Resources") {

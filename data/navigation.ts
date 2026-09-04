@@ -66,9 +66,39 @@ export const navigationItems: NavigationSection[] = [
   },
 ];
 
-export const navigationPages = navigationItems.flatMap((section) =>
-  section.subItems.map((item) => ({ ...item, section: section.title })),
-);
+export const utilityPages = [
+  {
+    title: "Privacy Policy",
+    description: "Learn how Haramain Quran Institute handles and protects personal information.",
+    url: "/privacy-policy",
+    section: "Policies",
+  },
+  {
+    title: "Terms & Conditions",
+    description: "Read the terms that support a clear and respectful learning experience.",
+    url: "/terms-and-conditions",
+    section: "Policies",
+  },
+  {
+    title: "Payment Policy",
+    description: "Understand tuition, payment confirmation, refunds, and payment support.",
+    url: "/payment-policy",
+    section: "Policies",
+  },
+  {
+    title: "Sitemap",
+    description: "Browse every main page on the Haramain Quran Institute website.",
+    url: "/sitemap",
+    section: "Website",
+  },
+] as const;
+
+export const navigationPages = [
+  ...navigationItems.flatMap((section) =>
+    section.subItems.map((item) => ({ ...item, section: section.title })),
+  ),
+  ...utilityPages,
+];
 
 export function getNavigationPage(pathname: string) {
   return navigationPages.find((item) => item.url === pathname);
