@@ -1,0 +1,122 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
+  background-color: #fbf6ef;
+  animation: loaderFade 2150ms cubic-bezier(0.76, 0, 0.24, 1) forwards;
+}
+
+:global(body.haramain-loader-active) {
+  overflow: hidden;
+}
+
+.mark {
+  position: relative;
+  width: 6rem;
+  aspect-ratio: 1;
+  animation: markAppear 200ms ease-out both;
+}
+
+.markImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0);
+}
+
+.faintMark {
+  opacity: 0.09;
+}
+
+.solidMark {
+  clip-path: inset(100% 0 0 0);
+  transform: scale(0.97);
+  transform-origin: center bottom;
+  animation: markReveal 1250ms cubic-bezier(0.76, 0, 0.24, 1) 200ms both;
+  will-change: clip-path, transform;
+}
+
+@keyframes markAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes markReveal {
+  from {
+    clip-path: inset(100% 0 0 0);
+    transform: scale(0.97);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+    transform: scale(1);
+  }
+}
+
+@keyframes loaderFade {
+  0%,
+  81.395% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@media (width >= 768px) {
+  .mark {
+    width: 7.375rem;
+  }
+}
+
+@media (width >= 1200px) {
+  .mark {
+    width: 8.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark,
+  .solidMark {
+    animation: none !important;
+  }
+
+  .loader {
+    animation: loaderFadeReduced 650ms ease-out forwards !important;
+  }
+
+  .solidMark {
+    clip-path: inset(0 0 0 0);
+    transform: none;
+  }
+}
+
+@keyframes loaderFadeReduced {
+  0%,
+  45% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
