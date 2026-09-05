@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter, Libre_Baskerville } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import { FormProvider } from "@/context/FormPopupContext";
 import FloatingChatButton from "@/components/chat/FloatingChatButton";
@@ -93,6 +94,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           {children}
           <FloatingChatButton />
         </FormProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
