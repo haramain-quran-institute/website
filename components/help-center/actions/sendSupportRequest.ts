@@ -1,6 +1,6 @@
 "use server";
 
-import { cleanText, requireEmail, requireText, sendWebsiteEmails, WebsiteEmailError } from "@/lib/email";
+import { cleanText, logWebsiteEmailFailure, requireEmail, requireText, sendWebsiteEmails, WebsiteEmailError } from "@/lib/email";
 
 export interface SupportRequestPayload {
   name: string;
@@ -57,7 +57,7 @@ export async function sendSupportRequest(payload: SupportRequestPayload) {
     return { success: true };
   } catch (error) {
     if (error instanceof WebsiteEmailError) return { success: false, error: error.message };
-    console.error("Help Center notification failed.");
-    return { success: false, error: "We could not send your message. Please try again shortly." };
+    logWebsiteEmailFailure("Help Center notification", error);
+    return { success: false, error: "We could not send your message right now. Please email email.hqinstitute@gmail.com or try again shortly." };
   }
 }

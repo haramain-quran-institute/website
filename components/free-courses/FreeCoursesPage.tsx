@@ -74,6 +74,7 @@ const freeCoursesFaqs: FAQ[] = [
   { question: "Are the free courses taught online?", answer: "Yes. Learning is delivered online, allowing students to join from home. Session details and joining instructions are provided after registration." },
   { question: "Do I need previous Islamic knowledge?", answer: "No. Both courses are designed to be approachable for beginners, while still offering useful reminders and practical guidance for continuing learners." },
   { question: "How can I register?", answer: "Use the Book Free Trial or contact option on this page and tell our team which free course you want to join. We will share the next available intake and schedule." },
+  { question: "Are free courses, paid courses, and the free trial the same?", answer: "No. This page lists selected courses offered without tuition. Haramain also provides paid, ongoing courses, while the free trial is a separate introductory lesson used to assess your level and discuss enrollment." },
 ];
 
 export default function FreeCoursesPage() {
@@ -89,7 +90,7 @@ export default function FreeCoursesPage() {
       <ServicesSection
         id="free-course-programs"
         title="Our Free Courses"
-        description="Choose a welcoming learning path and begin building practical Islamic knowledge with clear, supportive guidance."
+        description="Choose one of the selected tuition-free programs below. These are separate from Haramain's paid ongoing courses and free trial assessment."
         services={freeCourses}
       />
       <OverviewComposition

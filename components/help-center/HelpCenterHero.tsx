@@ -27,8 +27,8 @@ export default function HelpCenterHero() {
             Help Center
           </h1>
           <p className="mt-6 max-w-3xl font-body text-base leading-7 text-white/78 sm:text-lg sm:leading-8">
-            Get clear support for courses, trial classes, schedules, payments,
-            and your learning journey from the Haramain team.
+            Contact Haramain Quran Institute for clear help with Quran courses,
+            trial classes, fees, schedules, teachers, enrollment, and student support.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/80">

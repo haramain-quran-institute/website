@@ -1,6 +1,6 @@
 "use server";
 
-import { cleanText, requireEmail, requireText, sendWebsiteEmails, WebsiteEmailError } from "@/lib/email";
+import { cleanText, logWebsiteEmailFailure, requireEmail, requireText, sendWebsiteEmails, WebsiteEmailError } from "@/lib/email";
 
 export interface TrialBookingPayload {
   organizerName: string;
@@ -65,7 +65,7 @@ export async function sendTrialBooking(payload: TrialBookingPayload) {
     return { success: true };
   } catch (error) {
     if (error instanceof WebsiteEmailError) return { success: false, error: error.message };
-    console.error("Free trial notification failed.");
-    return { success: false, error: "We could not send your request. Please try again shortly." };
+    logWebsiteEmailFailure("Free trial notification", error);
+    return { success: false, error: "We could not send your request right now. Please email email.hqinstitute@gmail.com or try again shortly." };
   }
 }

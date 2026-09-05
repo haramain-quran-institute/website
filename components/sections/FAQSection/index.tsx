@@ -24,30 +24,19 @@ export default function FAQSection({
 </h2>
 
             <p className="mt-2 max-w-2xl font-body text-base font-normal leading-7 tracking-tight text-[#0D463E] sm:text-lg sm:leading-8">
-  If you have any further questions, please feel free to contact us by{" "}
+  Need another answer? Contact Haramain Quran Institute by{" "}
   <Link
-    href={instituteContact.whatsappHref}
-    target="_blank"
-    rel="noopener noreferrer"
+    href={instituteContact.emailHref}
     className="font-semibold text-[#0D463E] transition-opacity hover:opacity-70"
   >
-    Phone
-  </Link>{" "}
-  or by sending us a message on{" "}
-  <Link
-    href={instituteContact.whatsappHref}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="font-semibold text-[#0D463E] transition-opacity hover:opacity-70"
-  >
-    WhatsApp
+    email
   </Link>
-  .
+  for help with courses, fees, schedules, or enrollment.
 </p>
           </div>
 
           <Button asChild variant="primaryReverse" className="mt-2">
-            <Link href="/book-free-trial">Free Trial Class</Link>
+            <Link href="/book-free-trial">Book a Free Trial Class</Link>
           </Button>
         </div>
 

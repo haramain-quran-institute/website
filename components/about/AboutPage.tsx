@@ -23,7 +23,17 @@ const aboutFaqs: FAQ[] = [
   {
     question: "What is Haramain Quran Institute?",
     answer:
-      "Haramain Quran Institute is an online learning institute offering personalized Quran, Tajweed, memorization, Arabic, and Islamic Studies classes for students of different ages and levels.",
+      "Haramain Quran Institute is an online Quran and Islamic education institute offering personal classes in Quran reading, Tajweed, memorization, translation, Tafsir, Arabic, and Islamic Studies.",
+  },
+  {
+    question: "Do you teach international students?",
+    answer:
+      "Yes. Students can join online from the USA, UK, Canada, Australia, UAE, Europe, Gulf countries, and other regions. Suitable class times are confirmed according to the student's time zone and teacher availability.",
+  },
+  {
+    question: "Are male and female teachers available?",
+    answer:
+      "Yes. Haramain offers male and female teacher options. Families can share their preference during the trial or enrollment process, subject to schedule availability.",
   },
   {
     question: "Who can study with the institute?",
@@ -60,7 +70,7 @@ export default function AboutPage() {
       <OverviewComposition
         id="who-we-are"
         title="Who We Are"
-        description="Haramain Quran Institute is a growing online learning community dedicated to helping students read, understand, memorize, and connect with the Quran. Our teachers combine sound knowledge with patient one-to-one guidance, creating a learning environment where progress feels clear, supported, and meaningful."
+        description="Haramain Quran Institute is an online Quran school serving children and adults worldwide. We help students read, recite, memorize, translate, and understand the Quran while also offering Arabic and Islamic Studies through patient one-to-one guidance."
         imageAlt="The Haramain Quran Institute learning community"
         counters={achievementCounters}
       />

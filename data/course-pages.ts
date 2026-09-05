@@ -53,6 +53,11 @@ function courseFaqs(
       answer:
         "Yes. Your free trial lets you meet a teacher, assess your current level, discuss timings, and confirm the right learning plan before enrolling.",
     },
+    {
+      question: `Can international students join ${course}?`,
+      answer:
+        "Yes. Classes are online for students worldwide. Share your country, time zone, and preferred times so the team can confirm a suitable teacher and schedule.",
+    },
   ];
 }
 

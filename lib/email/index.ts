@@ -43,6 +43,26 @@ export class WebsiteEmailError extends Error {
   }
 }
 
+export class EmailConfigurationError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "EmailConfigurationError";
+  }
+}
+
+export function logWebsiteEmailFailure(context: string, error: unknown) {
+  const details =
+    error instanceof Error
+      ? {
+          name: error.name,
+          message: error.message,
+          code: "code" in error ? String(error.code) : undefined,
+        }
+      : { name: "UnknownError" };
+
+  console.error(`${context} failed.`, details);
+}
+
 export function cleanText(value: unknown, label: string, maxLength = 2000) {
   const cleaned = String(value ?? "").replace(/\u0000/g, "").trim();
   if (cleaned.length > maxLength) {
@@ -87,11 +107,11 @@ function getCredentials() {
   const user = process.env.GMAIL_USER?.trim();
   const password = process.env.GMAIL_APP_PASSWORD?.trim();
 
-  if (!user || !requireEmail(user)) {
-    throw new WebsiteEmailError("Email notifications are not configured yet.");
+  if (!user || !emailPattern.test(user) || /[\r\n]/.test(user)) {
+    throw new EmailConfigurationError("GMAIL_USER is missing or invalid.");
   }
   if (!password || password.startsWith("PASSWORD_")) {
-    throw new WebsiteEmailError("Email notifications are not configured yet.");
+    throw new EmailConfigurationError("GMAIL_APP_PASSWORD is missing or still a placeholder.");
   }
 
   return { user, password };

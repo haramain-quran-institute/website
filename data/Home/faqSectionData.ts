@@ -7,27 +7,42 @@ const faqData: FAQSectionProps = {
     {
       question: "What is Haramain Quran Institute?",
       answer:
-        "Haramain Quran Institute provides online Quran learning programs for students of different ages and learning levels, with qualified teachers and flexible class timings.",
+        "Haramain Quran Institute is an online Quran and Islamic education institute offering structured, one-to-one learning for children and adults worldwide.",
     },
     {
       question: "What courses do you offer?",
       answer:
-        "We offer Quran reading, Quran memorization, Tajweed, Noorani Qaida, translation, and other Quran learning programs designed according to each student's needs.",
+        "We offer Noorani Qaida, Quran Reading, Quran Memorization, Quran Translation, Qirat and Tajweed, Tafsir, Arabic Language, Women Guidance, Nasheed Reciting, and Islamic Studies.",
     },
     {
       question: "Are classes available online?",
       answer:
-        "Yes. All classes are conducted online, allowing students to learn the Quran from the comfort of their home.",
+        "Yes. Classes are taught live online, so students can learn from home through personal lessons with direct teacher guidance and correction.",
     },
     {
-      question: "Can I choose my class timing?",
+      question: "Do you teach children and adults?",
       answer:
-        "Yes. We offer flexible class timings to make Quran learning convenient for students living in different countries and time zones.",
+        "Yes. Children, teenagers, and adults can join. The course, lesson pace, examples, and practice are adapted to the learner's age and current level.",
     },
     {
-      question: "Can I take a trial class?",
+      question: "Are male and female Quran teachers available?",
       answer:
-        "Yes. You can request a free trial class to experience our teaching method and find the right course for you.",
+        "Yes. Male and female teachers are available. Share your preference during enrollment so the team can confirm a suitable teacher and schedule.",
+    },
+    {
+      question: "Can students outside Saudi Arabia join?",
+      answer:
+        "Yes. Haramain teaches students worldwide, including learners in the USA, UK, Canada, Australia, UAE, Europe, and Gulf countries. Class times are arranged around local time zones and teacher availability.",
+    },
+    {
+      question: "Which Quran course should a beginner start with?",
+      answer:
+        "A complete beginner usually starts with Noorani Qaida to learn Arabic letters, sounds, vowel signs, and joining. A free trial assessment helps confirm the correct starting level.",
+    },
+    {
+      question: "Can I book a free trial class?",
+      answer:
+        "Yes. The free trial lets you meet a teacher, discuss your goals and schedule, assess the learner's current level, and experience the online lesson format before enrollment.",
     },
   ],
 };

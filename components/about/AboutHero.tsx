@@ -25,7 +25,7 @@ export default function AboutHero() {
             About Us
           </h1>
           <p className="mt-6 max-w-3xl font-body text-base leading-7 text-white/78 sm:text-lg sm:leading-8">
-            Discover a caring online Quran institute built around qualified teachers, personal guidance, flexible learning, and a meaningful connection with the Quran.
+            Learn how Haramain Quran Institute provides personal online Quran and Islamic education for children and adults through structured courses and flexible schedules worldwide.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/80">

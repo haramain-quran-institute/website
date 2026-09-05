@@ -16,7 +16,7 @@ export default function FreeCoursesHero() {
           <p className="font-body text-sm font-semibold uppercase tracking-[0.2em] text-[#D0A86C]">Fee &amp; Schedule</p>
           <h1 className="mt-5 font-heading text-5xl font-semibold leading-[0.98] tracking-tight text-white sm:text-6xl min-[1024px]:text-[78px]">Free Courses</h1>
           <p className="mt-6 max-w-3xl font-body text-base leading-7 text-white/78 sm:text-lg sm:leading-8">
-            Accessible Islamic learning for everyone—created to strengthen essential knowledge, good character, and a meaningful connection with faith.
+            Join selected free online Islamic courses designed to strengthen essential knowledge, good character, and practical faith for children, families, and beginners.
           </p>
           <div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/80">
             <span className="inline-flex items-center gap-2"><Gift className="size-4 text-[#D0A86C]" /> Completely free</span>

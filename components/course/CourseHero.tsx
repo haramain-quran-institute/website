@@ -42,7 +42,7 @@ export default function CourseHero({ course }: { course: CoursePageData }) {
               href="/#courses"
               className="inline-flex items-center gap-3 rounded-[4px] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"
             >
-              <ArrowLeft className="size-4" /> Get Back
+              <ArrowLeft className="size-4" /> Explore Quran Courses
             </Link>
           </div>
         </div>

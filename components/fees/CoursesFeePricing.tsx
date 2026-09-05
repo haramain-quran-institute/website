@@ -106,7 +106,7 @@ function PlanGrid({ group, currency, yearly }: { group: FeeGroup; currency: Curr
                     : "border-[#0D463E]/15 text-[#0D463E] hover:border-[#0D463E] hover:bg-[#0D463E] hover:text-white"
                 }`}
               >
-                Select Plan
+                Book a Free Trial Class
               </Link>
             </div>
 

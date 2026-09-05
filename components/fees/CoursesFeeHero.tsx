@@ -27,7 +27,7 @@ export default function CoursesFeeHero() {
             Courses Fee
           </h1>
           <p className="mt-6 max-w-3xl font-body text-base leading-7 text-white/78 sm:text-lg sm:leading-8">
-            Compare flexible weekly learning plans for every Haramain Quran Institute course, switch currencies, and save 20% with yearly billing.
+            Compare transparent monthly tuition for one-to-one online Quran classes, choose a weekly plan, switch currencies, and view the available yearly saving.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/80">

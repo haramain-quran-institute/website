@@ -2,8 +2,8 @@ export const instituteContact = {
   address: "Makkah Al-Mukarramah - KSA",
   phoneDisplay: "+966 59 617 7943",
   whatsappHref: "https://wa.me/966596177943",
-  email: "contact@harmainquraninstitute.com",
-  emailHref: "mailto:contact@harmainquraninstitute.com",
+  email: "email.hqinstitute@gmail.com",
+  emailHref: "mailto:email.hqinstitute@gmail.com",
 } as const;
 
 export const instituteSocialLinks = {

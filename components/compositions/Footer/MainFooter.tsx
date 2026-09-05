@@ -40,8 +40,8 @@ export default function FooterMain({ footerItemsData }: FooterProps) {
               </Link>
 
               <p className="max-w-md font-body text-[15px] leading-6 text-[#161513]/70">
-                Learn the Quran with qualified teachers through flexible,
-                personalized classes designed around your schedule.
+                Online Quran and Islamic education for children and adults,
+                with personal teaching and flexible schedules worldwide.
               </p>
             </div>
 

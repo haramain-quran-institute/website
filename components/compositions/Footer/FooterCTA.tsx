@@ -112,11 +112,11 @@ export default function FooterCTA() {
 </h2>
 
 <p className="mx-auto max-w-3xl font-body text-[16px] font-normal leading-7 tracking-tight text-[#0D463E]/75">
-  Start your{" "}
+  Try a personal{" "}
   <strong className="font-semibold text-[#0D463E]">
-    Quran learning journey
+    online Quran class
   </strong>{" "}
-  with qualified teachers and flexible classes designed around you.
+  with a qualified teacher, discuss your goals, and find the right course and schedule.
 </p>
             </div>
 
@@ -126,7 +126,7 @@ export default function FooterCTA() {
   onClick={openFormPopup}
   className="mt-10 hover:bg-transparent"
 >
-  Book Free Trial
+  Book a Free Trial Class
 </Button>
           </div>
         </div>
