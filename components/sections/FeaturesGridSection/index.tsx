@@ -20,7 +20,7 @@ export default function FeaturesGridSection({
       } ${
         !noBg
           ? compactTop
-            ? "pb-24 pt-10 sm:pb-28 sm:pt-10 md:pb-32 md:pt-12 lg:pb-36 lg:pt-14"
+            ? "pb-24 pt-8 sm:pb-28 sm:pt-9 md:pb-32 md:pt-10 lg:pb-36"
             : "py-24 sm:py-28 md:py-32 lg:py-36"
           : marginClasses
       }`}

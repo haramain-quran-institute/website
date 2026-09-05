@@ -12,7 +12,7 @@ export default function IntroSection({
       id={id}
       className={`w-full bg-[#FBF6EF] pt-16 md:pt-20 lg:pt-28 ${
         compactBottom
-          ? "pb-7 md:pb-8 lg:pb-10"
+          ? "pb-28 sm:pb-32 md:pb-36 lg:pb-40"
           : "pb-16 md:pb-20 lg:min-h-[520px] lg:pb-24"
       }`}
     >

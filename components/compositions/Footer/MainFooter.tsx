@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 
@@ -9,6 +10,7 @@ import {
   YouTubeIcon,
 } from "@/assets/Icons";
 import { instituteContact, instituteSocialLinks } from "@/data/site-contact";
+import FooterLogo from "@/assets/FooterLogo.png";
 import type { FooterProps } from "./types/links";
 
 const socialLinks = [
@@ -28,13 +30,13 @@ export default function FooterMain({ footerItemsData }: FooterProps) {
         <div className="grid grid-cols-1 gap-12 py-14 min-[1024px]:grid-cols-[minmax(0,1.15fr)_minmax(0,2.85fr)] min-[1024px]:gap-14 min-[1024px]:py-[72px] min-[1280px]:gap-16">
           <div className="flex flex-col gap-7">
             <div className="flex flex-col gap-5">
-              <Link href="/" className="inline-flex w-fit flex-col text-[#0D463E]">
-                <span className="font-heading text-[25px] font-semibold leading-none tracking-tight">
-                  Haramain
-                </span>
-                <span className="mt-1 font-body text-[10px] font-semibold uppercase tracking-[0.22em]">
-                  Quran Institute
-                </span>
+              <Link href="/" className="inline-flex w-fit" aria-label="Haramain Quran Institute home">
+                <Image
+                  src={FooterLogo}
+                  alt="Haramain Quran Institute"
+                  className="h-auto w-48 sm:w-52"
+                  sizes="(min-width: 576px) 208px, 192px"
+                />
               </Link>
 
               <p className="max-w-md font-body text-[15px] leading-6 text-[#161513]/70">

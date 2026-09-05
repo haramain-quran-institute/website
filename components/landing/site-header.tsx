@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 
@@ -28,14 +29,18 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import HeaderLogo from "@/assets/HeaderLogo.png";
 
 function InstituteMark() {
   return (
-    <Link href="/" className="shrink-0 font-serif text-lg leading-[0.9] text-white">
-      Haramain
-      <span className="mt-1 block font-body text-[9px] font-semibold uppercase tracking-[0.22em] text-white/85">
-        Quran Institute
-      </span>
+    <Link href="/" className="inline-flex shrink-0 items-center" aria-label="Haramain Quran Institute home">
+      <Image
+        src={HeaderLogo}
+        alt="Haramain Quran Institute"
+        priority
+        className="h-auto w-36 sm:w-40 min-[1200px]:w-[184px]"
+        sizes="(min-width: 1200px) 184px, (min-width: 576px) 160px, 144px"
+      />
     </Link>
   );
 }

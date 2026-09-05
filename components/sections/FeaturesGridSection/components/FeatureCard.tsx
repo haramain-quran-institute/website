@@ -1,4 +1,6 @@
+import Image from "next/image";
 import type { FeatureCardProps } from "../types";
+import SectionWatermark from "@/assets/IconForSectionsLowTransparency.png";
 
 import {
   BookOpen,
@@ -24,10 +26,12 @@ export default function FeatureCard({
     <div className="relative flex min-h-[280px] w-full flex-col items-center text-center">
       {/* Large subtle background icon */}
       {isFirst && (
-        <IconComponent
-          className="pointer-events-none absolute -top-20 left-1/2 z-0 h-[380px] w-[380px] -translate-x-1/2 text-[#0D463E] opacity-[0.045]"
-          strokeWidth={1}
-          aria-hidden
+        <Image
+          src={SectionWatermark}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-20 left-1/2 z-0 h-[380px] w-[380px] -translate-x-1/2 object-contain opacity-[0.045]"
+          sizes="380px"
         />
       )}
 

@@ -17,7 +17,7 @@
 
 .mark {
   position: relative;
-  width: 6rem;
+  width: 9rem;
   aspect-ratio: 1;
   animation: markAppear 200ms ease-out both;
 }
@@ -81,13 +81,13 @@
 
 @media (width >= 768px) {
   .mark {
-    width: 7.375rem;
+    width: 11rem;
   }
 }
 
 @media (width >= 1200px) {
   .mark {
-    width: 8.75rem;
+    width: 13rem;
   }
 }
 
