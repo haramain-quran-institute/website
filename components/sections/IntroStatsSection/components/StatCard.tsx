@@ -52,7 +52,7 @@ export default function StatCard({ title, value, children }: StatCardProps) {
         duration: 0.8,
         ease: [0.22, 1, 0.36, 1],
       }}
-      className="flex w-full flex-col items-start justify-start gap-5 rounded-[4px] border border-[#E3E0D9] bg-white p-6 transition-shadow duration-200 hover:shadow-lg min-[1024px]:p-8"
+      className="flex w-full flex-col items-start justify-start gap-5 rounded-[var(--radius-sm)] border border-[#E3E0D9] bg-white p-6 transition-shadow duration-200 hover:shadow-lg min-[1024px]:p-8"
     >
       <motion.div
         initial={{ scale: 0.7, opacity: 0 }}

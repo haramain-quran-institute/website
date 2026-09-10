@@ -19,7 +19,7 @@ const HeroCTA: React.FC<HeroCTAProps> = ({
   const { openFormPopup } = useContext(FormPopupContext);
 
   return (
-    <div className="grid w-full grid-cols-2 overflow-hidden rounded-[4px] border border-white/70 sm:w-fit">
+    <div className="grid w-full grid-cols-2 overflow-hidden rounded-[var(--radius-sm)] border border-white/70 sm:w-fit">
       <Button
         variant="secondary"
         asChild

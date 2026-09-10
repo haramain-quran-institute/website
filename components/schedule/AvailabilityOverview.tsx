@@ -1,7 +1,7 @@
 import Image, { type StaticImageData } from "next/image";
 import type { LucideIcon } from "lucide-react";
 
-import defaultImage from "@/assets/gallery-1.jpg";
+import defaultImage from "@/assets/CourseSchedule-Images/feature.png";
 
 export interface AvailabilityFeature {
   title: string;
@@ -46,7 +46,11 @@ export default function AvailabilityOverview({
               alt={imageAlt}
               fill
               sizes="(min-width: 1024px) 42vw, 90vw"
-              className="scale-[1.45] object-cover object-[100%_37%]"
+              className={
+                image === defaultImage
+                  ? "scale-[1.45] object-cover object-[100%_37%]"
+                  : "object-cover object-center"
+              }
             />
             <div className="pointer-events-none absolute inset-0 bg-[#0D463E]/[0.06]" aria-hidden="true" />
           </div>

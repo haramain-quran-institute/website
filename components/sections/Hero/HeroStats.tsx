@@ -9,7 +9,7 @@ interface HeroStatsProps {
 
 const HeroStats: React.FC<HeroStatsProps> = ({ stats }) => {
   return (
-    <div className="grid w-full max-w-[640px] grid-cols-3 items-center justify-center rounded-[4px] border border-[#FFFFFF]/10 bg-[#021C18]/5 px-2 py-3 backdrop-blur-md sm:flex sm:px-5">
+    <div className="grid w-full max-w-[640px] grid-cols-3 items-center justify-center rounded-[var(--radius-sm)] border border-[#FFFFFF]/10 bg-[#021C18]/5 px-2 py-3 backdrop-blur-md sm:flex sm:px-5">
       {stats.map((stat, index) => (
         <div key={index} className="flex min-w-0 items-center justify-center">
           <div className="flex min-w-0 flex-col items-center justify-center gap-1 px-1 text-center sm:min-w-[160px] sm:flex-row sm:gap-2 sm:px-3">

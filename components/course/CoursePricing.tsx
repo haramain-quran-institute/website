@@ -117,7 +117,7 @@ export default function CoursePricing({ course }: { course: CoursePageData }) {
             return (
               <article
                 key={plan.title}
-                className={`flex min-h-[520px] flex-col rounded-[18px] border p-3 shadow-[0_12px_40px_rgba(13,70,62,0.06)] ${
+                className={`flex min-h-[520px] flex-col rounded-[var(--radius-lg)] border p-3 shadow-[0_12px_40px_rgba(13,70,62,0.06)] ${
                   featured ? "border-[#071F1B] bg-[#071F1B] text-white" : "border-[#0D463E]/8 bg-white text-[#0D463E]"
                 }`}
               >
@@ -149,7 +149,7 @@ export default function CoursePricing({ course }: { course: CoursePageData }) {
 
                   <Link
                     href="/book-free-trial"
-                    className={`mt-7 inline-flex w-full items-center justify-center rounded-full border px-4 py-3 font-body text-sm font-semibold transition-colors ${
+                    className={`mt-7 inline-flex w-full items-center justify-center rounded-[var(--radius-sm)] border px-4 py-3 font-body text-sm font-semibold transition-colors ${
                       featured
                         ? "border-[#D0A86C] bg-[#D0A86C] text-[#071F1B] hover:bg-transparent hover:text-[#D0A86C]"
                         : "border-[#0D463E]/15 text-[#0D463E] hover:border-[#0D463E] hover:bg-[#0D463E] hover:text-white"
@@ -159,7 +159,7 @@ export default function CoursePricing({ course }: { course: CoursePageData }) {
                   </Link>
                 </div>
 
-                <div className={`rounded-[14px] p-4 ${featured ? "bg-white text-[#0D463E]" : "bg-[#F1F3F1]"}`}>
+                <div className={`rounded-[var(--radius-md)] p-4 ${featured ? "bg-white text-[#0D463E]" : "bg-[#F1F3F1]"}`}>
                   <ul className="grid gap-3.5">
                     {planBenefits.map((benefit) => (
                       <li key={benefit} className="flex items-start gap-2.5 font-body text-[13px] leading-5">

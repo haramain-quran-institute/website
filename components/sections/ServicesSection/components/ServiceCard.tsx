@@ -1,4 +1,12 @@
 import Link from "next/link";
+import {
+  AudioLines,
+  BookMarked,
+  BookOpenText,
+  Brain,
+  Landmark,
+  Languages,
+} from "lucide-react";
 import type { ServiceItem } from "../types";
 
 interface ServiceCardProps {
@@ -10,7 +18,28 @@ interface ServiceCardProps {
    Course Icons
 --------------------------------------------- */
 
+const homeCourseIcons = [
+  BookOpenText,
+  AudioLines,
+  Languages,
+  Brain,
+  BookMarked,
+  Landmark,
+] as const;
+
 function CourseIcon({ index }: { index: number }) {
+  const Icon = homeCourseIcons[index];
+
+  if (Icon) {
+    return (
+      <Icon
+        aria-hidden="true"
+        className="size-11 text-[#0D706D]"
+        strokeWidth={1.8}
+      />
+    );
+  }
+
   const commonProps = {
     width: 44,
     height: 44,
@@ -267,7 +296,7 @@ export default function ServiceCard({
     <article
       className={[
         "group relative flex min-h-[255px] flex-col",
-        "rounded-[0.4rem]",
+        "rounded-[var(--radius-sm)]",
         "border border-[#E3E0D9]",
         "bg-white",
         "px-7 py-7",

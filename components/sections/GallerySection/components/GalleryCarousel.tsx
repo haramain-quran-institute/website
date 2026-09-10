@@ -117,7 +117,7 @@ export default function GalleryCarousel({
       {slide.media.map((item, index) => (
         <div
           key={index}
-          className="relative aspect-[4/3] min-w-0 overflow-hidden rounded-lg"
+          className="relative aspect-[4/3] min-w-0 overflow-hidden rounded-[var(--radius-md)]"
         >
           <MediaRenderer
             item={item}
@@ -155,7 +155,7 @@ export default function GalleryCarousel({
         <div className="relative w-full overflow-visible">
           <div
             ref={emblaRef}
-            className="overflow-hidden rounded-lg"
+            className="overflow-hidden rounded-[var(--radius-md)]"
           >
             <div className="flex">
               {slides.map((slide, index) => (

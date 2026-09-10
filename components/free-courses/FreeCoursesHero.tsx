@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, BookOpenCheck, Gift, UsersRound } from "lucide-react";
 
-import heroImage from "@/assets/gallery-3.jpg";
+import heroImage from "@/assets/FreeCourses-Images/hero.png";
 
 export default function FreeCoursesHero() {
   return (
@@ -24,7 +24,7 @@ export default function FreeCoursesHero() {
             <span className="inline-flex items-center gap-2"><UsersRound className="size-4 text-[#D0A86C]" /> Open to all learners</span>
           </div>
           <div className="mt-10">
-            <Link href="/" className="inline-flex items-center gap-3 rounded-[4px] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]">
+            <Link href="/" className="inline-flex items-center gap-3 rounded-[var(--radius-sm)] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]">
               <ArrowLeft className="size-4" /> Go Back
             </Link>
           </div>

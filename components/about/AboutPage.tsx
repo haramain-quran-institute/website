@@ -1,5 +1,6 @@
 import { BookOpenCheck, Globe2, GraduationCap, UsersRound } from "lucide-react";
 
+import aboutFeatureImage from "@/assets/AboutUs-Images/feature.png";
 import { OverviewComposition, type OverviewCounter } from "@/components/course/CourseOverview";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
@@ -73,6 +74,7 @@ export default function AboutPage() {
         description="Haramain Quran Institute is an online Quran school serving children and adults worldwide. We help students read, recite, memorize, translate, and understand the Quran while also offering Arabic and Islamic Studies through patient one-to-one guidance."
         imageAlt="The Haramain Quran Institute learning community"
         counters={achievementCounters}
+        image={aboutFeatureImage}
       />
       <AboutPillars />
       <GallerySection id="about-gallery" {...galleryData} />

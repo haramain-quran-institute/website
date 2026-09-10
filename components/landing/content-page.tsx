@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, CalendarDays, HeartHandshake } from "lucide-react";
 
-import heroImage from "@/assets/gallery-2.jpg";
+import heroImage from "@/assets/Home-Images/hero.png";
 import { navigationItems, type NavigationItem } from "@/data/navigation";
 import { SiteHeader } from "./site-header";
 import { SiteFooter } from "./site-footer";
@@ -82,16 +82,16 @@ export function ContentPage({ page }: ContentPageProps) {
               Learn with clarity, care, and consistency.
             </h2>
             <p className="mt-6 max-w-3xl font-body text-lg leading-8 text-[#0D463E]/75">{content.intro}</p>
-            <Link href="/book-free-trial" className="mt-9 inline-flex items-center gap-3 rounded-[4px] bg-[#0D463E] px-7 py-4 font-body text-sm font-semibold text-white transition-colors hover:bg-[#146154]">
+            <Link href="/book-free-trial" className="mt-9 inline-flex items-center gap-3 rounded-[var(--radius-sm)] bg-[#0D463E] px-7 py-4 font-body text-sm font-semibold text-white transition-colors hover:bg-[#146154]">
               Book a Free Trial <ArrowRight className="size-4" />
             </Link>
           </div>
 
-          <aside className="rounded-[6px] border border-[#0D463E]/10 bg-white p-7 shadow-[0_16px_50px_rgba(13,70,62,0.08)] sm:p-9">
+          <aside className="rounded-[var(--radius-sm)] border border-[#0D463E]/10 bg-white p-7 shadow-[0_16px_50px_rgba(13,70,62,0.08)] sm:p-9">
             <h2 className="font-heading text-2xl font-semibold text-[#0D463E]">Explore {page.section}</h2>
             <nav className="mt-5 grid gap-1" aria-label={`More ${page.section} pages`}>
               {related.map((item) => (
-                <Link key={item.url} href={item.url} className={`flex items-center justify-between rounded-[4px] px-4 py-3 font-body text-sm transition-colors ${item.url === page.url ? "bg-[#0D463E] text-white" : "text-[#0D463E] hover:bg-[#0D463E]/5"}`}>
+                <Link key={item.url} href={item.url} className={`flex items-center justify-between rounded-[var(--radius-sm)] px-4 py-3 font-body text-sm transition-colors ${item.url === page.url ? "bg-[#0D463E] text-white" : "text-[#0D463E] hover:bg-[#0D463E]/5"}`}>
                   {item.title}<ArrowRight className="size-4" />
                 </Link>
               ))}
@@ -105,7 +105,7 @@ export function ContentPage({ page }: ContentPageProps) {
           {content.points.map((point, index) => {
             const Icon = [BookOpen, CalendarDays, HeartHandshake][index];
             return (
-              <article key={point.title} className="rounded-[6px] border border-[#0D463E]/10 p-7 md:p-9">
+              <article key={point.title} className="rounded-[var(--radius-sm)] border border-[#0D463E]/10 p-7 md:p-9">
                 <Icon className="size-8 text-[#0D706D]" />
                 <h3 className="mt-7 font-heading text-2xl font-semibold text-[#0D463E]">{point.title}</h3>
                 <p className="mt-3 font-body leading-7 text-[#0D463E]/65">{point.text}</p>
@@ -120,7 +120,7 @@ export function ContentPage({ page }: ContentPageProps) {
           <p className="font-body text-sm font-semibold uppercase tracking-[0.18em] text-[#D0A86C]">Take the first step</p>
           <h2 className="mt-4 max-w-3xl font-heading text-4xl font-medium leading-tight sm:text-5xl">Begin your Quran learning journey today.</h2>
           <p className="mt-5 max-w-2xl font-body leading-7 text-white/70">Meet a qualified teacher, discuss your goals, and experience a complimentary online lesson.</p>
-          <Link href="/book-free-trial" className="mt-8 inline-flex items-center gap-3 rounded-[4px] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] hover:bg-[#D0A86C] hover:text-white">
+          <Link href="/book-free-trial" className="mt-8 inline-flex items-center gap-3 rounded-[var(--radius-sm)] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] hover:bg-[#D0A86C] hover:text-white">
             Request Your Trial <ArrowRight className="size-4" />
           </Link>
         </div>

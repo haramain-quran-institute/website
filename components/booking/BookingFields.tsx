@@ -48,7 +48,7 @@ export function TimeZoneSelect({
   const options = timeZones.includes(value) ? timeZones : [value, ...timeZones];
 
   return (
-    <label className="mt-6 flex max-w-xl items-center gap-3 rounded-[8px] border border-[#0D463E]/12 bg-white px-4 py-3">
+    <label className="mt-6 flex max-w-xl items-center gap-3 rounded-[var(--radius-md)] border border-[#0D463E]/12 bg-white px-4 py-3">
       <Globe2 className="size-4 shrink-0 text-[#0D706D]" />
       <span className="sr-only">Select your country or city time zone</span>
       <select
@@ -77,7 +77,7 @@ const callingCodeOptions = countryCallingCodes.flatMap((country) =>
 
 export function PhoneNumberField({ required = false }: { required?: boolean }) {
   return (
-    <div className="mt-2 flex h-12 w-full overflow-hidden rounded-[6px] border border-[#0D463E]/15 bg-white focus-within:border-[#0D706D]">
+    <div className="mt-2 flex h-12 w-full overflow-hidden rounded-[var(--radius-sm)] border border-[#0D463E]/15 bg-white focus-within:border-[#0D706D]">
       <select
         name="phoneCode"
         defaultValue="+966"

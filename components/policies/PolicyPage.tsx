@@ -1,11 +1,21 @@
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import type { PolicyPageData } from "@/data/policies";
+import privacyPolicyHero from "@/assets/PrivacyPolicy-Images/hero.png";
+import termsAndConditionsHero from "@/assets/TermsAndConditions-Images/hero.png";
+import paymentPolicyHero from "@/assets/PaymentPolicy-Images/hero.png";
 
 import PolicyContent from "./PolicyContent";
 import PolicyHero from "./PolicyHero";
 
 export default function PolicyPage({ policy }: { policy: PolicyPageData }) {
+  const heroImage =
+    policy.url === "/terms-and-conditions"
+      ? termsAndConditionsHero
+      : policy.url === "/payment-policy"
+        ? paymentPolicyHero
+        : privacyPolicyHero;
+
   return (
     <main className="min-h-screen bg-[#FBF6EF]">
       <SiteHeader />
@@ -13,6 +23,7 @@ export default function PolicyPage({ policy }: { policy: PolicyPageData }) {
         title={policy.title}
         eyebrow={policy.eyebrow}
         description={policy.description}
+        heroImage={heroImage}
       />
       <PolicyContent policy={policy} />
       <SiteFooter />

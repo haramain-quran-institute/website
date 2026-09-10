@@ -9,7 +9,7 @@ export const ListItem = React.forwardRef<
     <a
       ref={ref}
       className={cn(
-        "group block select-none rounded-[4px] p-3 no-underline outline-none transition-colors duration-200 hover:!bg-[#0A3E37] focus:!bg-[#0A3E37]",
+        "group block select-none rounded-[var(--radius-sm)] p-3 no-underline outline-none transition-colors duration-200 hover:!bg-[#0A3E37] focus:!bg-[#0A3E37]",
         className
       )}
       {...props}

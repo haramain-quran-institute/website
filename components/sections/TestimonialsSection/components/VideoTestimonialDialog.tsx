@@ -1,11 +1,11 @@
 "use client";
 
-const youtubeTestimonials = ["R3JpYbTgJjg", "XEn66FxVgH8", "L67IjYgMK5I"];
+import Image, { type StaticImageData } from "next/image";
 
 export default function VideoTestimonialDialog({
   open,
   onOpenChange,
-  videoId,
+  thumbnails,
   currentIndex,
   onPrevious,
   onNext,
@@ -13,13 +13,14 @@ export default function VideoTestimonialDialog({
 }: {
   open: boolean;
   onOpenChange: (open: boolean) => void;
-  videoId: string;
+  thumbnails: StaticImageData[];
   currentIndex: number;
   onPrevious: () => void;
   onNext: () => void;
   onSelect: (index: number) => void;
 }) {
   if (!open) return null;
+  const thumbnail = thumbnails[currentIndex];
 
   return (
     <div
@@ -32,7 +33,7 @@ export default function VideoTestimonialDialog({
       <button
         type="button"
         onClick={() => onOpenChange(false)}
-        className="absolute top-5 right-5 z-[10000] flex h-10 items-center justify-center gap-2 rounded-full bg-[#FBF6EF] px-4 text-[#0D463E] shadow-[0_8px_25px_rgba(0,0,0,0.15)]"
+        className="absolute top-5 right-5 z-[10000] flex h-10 items-center justify-center gap-2 rounded-[var(--radius-sm)] bg-[#FBF6EF] px-4 text-[#0D463E] shadow-[0_8px_25px_rgba(0,0,0,0.15)]"
         aria-label="Close video"
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
@@ -42,14 +43,14 @@ export default function VideoTestimonialDialog({
       </button>
 
       <div className="relative aspect-[9/16] w-full max-w-[320px]" onClick={(event) => event.stopPropagation()}>
-        <div className="relative z-10 size-full overflow-hidden rounded-[0.8rem] bg-black shadow-2xl">
-          <iframe
-            key={videoId}
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`}
-            title="Student Testimonial"
-            className="absolute inset-0 size-full"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
+        <div className="relative z-10 size-full overflow-hidden rounded-[var(--radius-md)] bg-black shadow-2xl">
+          <Image
+            src={thumbnail}
+            alt="Student testimonial thumbnail"
+            fill
+            sizes="320px"
+            className="object-cover"
+            priority
           />
         </div>
 
@@ -61,7 +62,7 @@ export default function VideoTestimonialDialog({
         </button>
 
         <div className="absolute -bottom-9 left-1/2 z-[10001] flex -translate-x-1/2 items-center gap-2">
-          {youtubeTestimonials.map((_, index) => (
+          {thumbnails.map((_, index) => (
             <button
               key={index}
               type="button"

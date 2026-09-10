@@ -17,7 +17,7 @@ const HeroGalleryTrigger: React.FC<GalleryTriggerProps> = ({ thumbnail, thumbnai
 
   return (
     <div
-      className="group flex cursor-pointer flex-row items-center overflow-hidden rounded-xl border border-OnyxBlack-100 bg-gradient-to-r from-OnyxBlack-100 to-OnyxBlack-20 transition"
+      className="group flex cursor-pointer flex-row items-center overflow-hidden rounded-[var(--radius-md)] border border-OnyxBlack-100 bg-gradient-to-r from-OnyxBlack-100 to-OnyxBlack-20 transition"
       onClick={openGalleryPopup}
     >
       <div className="flex flex-row items-center gap-2 p-2 text-PearlWhite">

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, BookOpenText, Library, Sparkles } from "lucide-react";
 
-import heroImage from "@/assets/gallery-5.jpg";
+import heroImage from "@/assets/Blogs-Images/hero.png";
 
 export default function BlogsHero() {
   return (
@@ -15,7 +15,7 @@ export default function BlogsHero() {
         <h1 className="mt-5 font-heading text-5xl font-semibold leading-[0.98] text-white sm:text-6xl min-[1024px]:text-[78px]">Our Blogs</h1>
         <p className="mt-6 max-w-3xl font-body text-base leading-7 text-white/78 sm:text-lg sm:leading-8">Thoughtful guidance for Quran learning, Tajweed, memorization, Islamic studies, parenting, duas, and a meaningful Muslim lifestyle.</p>
         <div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/80"><span className="inline-flex items-center gap-2"><BookOpenText className="size-4 text-[#D0A86C]" /> Practical articles</span><span className="inline-flex items-center gap-2"><Library className="size-4 text-[#D0A86C]" /> Trusted learning topics</span><span className="inline-flex items-center gap-2"><Sparkles className="size-4 text-[#D0A86C]" /> Guidance for daily life</span></div>
-        <div className="mt-10"><Link href="/" className="inline-flex items-center gap-3 rounded-[4px] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"><ArrowLeft className="size-4" /> Go Back</Link></div>
+        <div className="mt-10"><Link href="/" className="inline-flex items-center gap-3 rounded-[var(--radius-sm)] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"><ArrowLeft className="size-4" /> Go Back</Link></div>
       </div></div>
     </section>
   );

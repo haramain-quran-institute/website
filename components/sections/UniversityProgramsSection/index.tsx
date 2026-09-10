@@ -299,7 +299,7 @@ export default function UniversityProgramsSection({
         {!isTeaser && (
           <>
             {/* Filters */}
-            <div className="bg-isabelle/20 grid gap-6 rounded-2xl p-5 md:p-6 lg:grid-cols-3">
+            <div className="bg-isabelle/20 grid gap-6 rounded-[var(--radius-lg)] p-5 md:p-6 lg:grid-cols-3">
               <MultiSelectGroup
                 label="Filter by Country"
                 items={sectionData.countries.map((country) => ({
@@ -342,7 +342,7 @@ export default function UniversityProgramsSection({
               {filteredUniversities.map((university) => (
                 <article
                   key={university.id}
-                  className="overflow-hidden rounded-2xl border border-[#1A16120F] bg-white shadow-sm"
+                  className="overflow-hidden rounded-[var(--radius-lg)] border border-[#1A16120F] bg-white shadow-sm"
                 >
                   <div className="relative aspect-16/10 w-full">
                     <Image

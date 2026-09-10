@@ -20,6 +20,7 @@ interface ConfirmationEmail {
 interface WebsiteEmailOptions {
   formName: string;
   adminSubject: string;
+  exactAdminSubject?: boolean;
   sourcePage: string;
   replyTo?: string;
   fields: NotificationField[];
@@ -172,7 +173,7 @@ function brandedEmail({
               <h1 style="margin:10px 0 0;color:#FFFFFF;font-size:28px;line-height:1.2;">${escapeHtml(title)}</h1>
             </td></tr>
             <tr><td style="padding:28px 30px;">
-              <p style="margin:0 0 20px;color:#526762;font-size:15px;line-height:1.7;">${escapeHtml(message)}</p>
+              <p style="margin:0 0 20px;color:#526762;font-size:15px;line-height:1.7;white-space:pre-line;">${escapeHtml(message)}</p>
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border:1px solid #E8E1D7;border-radius:10px;border-collapse:separate;border-spacing:0;background:#FFFFFF;overflow:hidden;">
                 ${renderedRows(fields)}
               </table>
@@ -251,7 +252,9 @@ export async function sendWebsiteEmails(options: WebsiteEmailOptions) {
         from: sender,
         to: user,
         replyTo,
-        subject: `${adminSubject} — Haramain Quran Institute`,
+        subject: options.exactAdminSubject
+          ? adminSubject
+          : `${adminSubject} — Haramain Quran Institute`,
         html: brandedEmail({
           title: adminSubject,
           message: "A new website submission has been received. The details are shown below.",

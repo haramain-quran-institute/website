@@ -10,9 +10,9 @@ import CareerHero from "./CareerHero";
 import JobsBoard from "./JobsBoard";
 
 const applySteps = [
-  { icon: "bookOpen" as const, title: "Submit Your Details", description: "Choose a suitable role and share your contact details, experience, qualifications, and CV with our recruitment team." },
-  { icon: "calendarCheck" as const, title: "Meet Us for an Interview", description: "Shortlisted candidates join an interview and, where relevant, a teaching demonstration or practical skills assessment." },
-  { icon: "graduationCap" as const, title: "Get Hired & Begin", description: "Successful candidates receive an offer, complete onboarding, and begin making a meaningful contribution to our learners." },
+  { icon: "bookOpen" as const, title: "Check Open Roles", description: "Visit this page to see whether Haramain Quran Institute is currently accepting applications for a suitable role." },
+  { icon: "calendarCheck" as const, title: "Prepare Your Details", description: "Keep your contact details, experience, qualifications, and CV ready for future opportunities." },
+  { icon: "graduationCap" as const, title: "Apply When Available", description: "When a position opens, submit your details and our team will review suitable applications." },
 ];
 const benefits: TeacherExpertiseFeature[] = [
   { title: "Purpose-Led Work", description: "Use your skills to help learners build knowledge, confidence, character, and a lasting relationship with the Quran.", icon: HeartHandshake },
@@ -22,12 +22,12 @@ const benefits: TeacherExpertiseFeature[] = [
   { title: "Supportive Standards", description: "Join a team that values reliable knowledge, respectful communication, student care, and consistent quality.", icon: BookOpenCheck },
 ];
 const careerFaqs: FAQ[] = [
-  { question: "How can I apply for a position?", answer: "Choose an open role, select Apply Now, and submit your contact information, relevant experience, qualifications, and CV through the application form." },
-  { question: "Can I apply for remote teaching work?", answer: "Yes. Use the Remote filter to see opportunities that can be performed online. Location and availability requirements are shown on each vacancy." },
+  { question: "Are there any open positions right now?", answer: "No. Haramain Quran Institute does not have open positions available right now. Future opportunities will be shared on this page." },
+  { question: "How can I apply when positions open?", answer: "When a role becomes available, follow the application instructions on this page and submit the requested contact details, experience, qualifications, and CV." },
+  { question: "Will remote teaching roles be listed here?", answer: "Yes. If remote opportunities become available, they will be listed on this page with the role details and requirements." },
   { question: "What qualifications do Quran teachers need?", answer: "Teaching roles generally require strong Quran recitation and Tajweed, reliable Islamic knowledge, patient communication, and confidence teaching online. Ijazah or formal qualifications are valuable where specified." },
-  { question: "What happens after I submit my application?", answer: "The recruitment team reviews each submission. Shortlisted applicants are contacted for an interview and may be asked to complete a teaching demonstration or role-specific assessment." },
-  { question: "Can I apply for more than one role?", answer: "Yes. Submit a separate application for each suitable position so your experience can be assessed against the correct requirements." },
-  { question: "Will every applicant receive an interview?", answer: "Interviews are arranged for shortlisted candidates whose qualifications, experience, and availability most closely match the role." },
+  { question: "What happens after an application is submitted?", answer: "The recruitment team reviews applications for open roles. Shortlisted applicants may be contacted for an interview, teaching demo, or role-specific assessment." },
+  { question: "Can I apply for more than one future role?", answer: "Yes. When positions are open, submit a separate application for each suitable role so your experience can be assessed correctly." },
 ];
 
-export default function CareerPage() { return <main className="min-h-screen bg-[#FBF6EF]"><SiteHeader /><CareerHero /><FeaturesGridSection id="how-to-apply" title="How to Apply" description="A simple three-step path from your application to joining the Haramain team." features={applySteps} /><JobsBoard /><TeacherExpertiseSection id="why-work-with-us" title="Why Work with Haramain?" description="Join a growing learning community where professional care and meaningful service come together." features={benefits} /><FAQSection id="career-faqs" title="Career FAQs" faqs={careerFaqs} /><SiteFooter /></main>; }
+export default function CareerPage() { return <main className="min-h-screen bg-[#FBF6EF]"><SiteHeader /><CareerHero /><FeaturesGridSection id="how-to-apply" title="How to Apply" description="A simple three-step path for future Haramain career opportunities." features={applySteps} /><JobsBoard /><TeacherExpertiseSection id="why-work-with-us" title="Why Work with Haramain?" description="Join a growing learning community where professional care and meaningful service come together." features={benefits} /><FAQSection id="career-faqs" title="Career FAQs" faqs={careerFaqs} /><SiteFooter /></main>; }

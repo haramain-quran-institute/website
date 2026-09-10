@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, CalendarDays, Clock3, Globe2 } from "lucide-react";
 
-import heroImage from "@/assets/gallery-8.jpg";
+import heroImage from "@/assets/BookFreeTrial-Images/hero.png";
 
 export default function BookTrialHero() {
   return <section className="relative flex min-h-[650px] items-end overflow-hidden pb-20 pt-40 text-white min-[768px]:min-h-[720px] min-[1024px]:pb-24">
@@ -14,7 +14,7 @@ export default function BookTrialHero() {
       <h1 className="mt-5 font-heading text-5xl font-semibold leading-[0.98] sm:text-6xl min-[1024px]:text-[78px]">Book Free Trial</h1>
       <p className="mt-6 max-w-3xl font-body text-base leading-7 text-white/78 sm:text-lg sm:leading-8">Choose a convenient date and time, tell us about the learner, and experience a focused 30-minute online Quran class with no obligation.</p>
       <div className="mt-8 flex flex-wrap gap-x-7 gap-y-3 text-sm text-white/80"><span className="inline-flex items-center gap-2"><CalendarDays className="size-4 text-[#D0A86C]" /> Flexible scheduling</span><span className="inline-flex items-center gap-2"><Clock3 className="size-4 text-[#D0A86C]" /> 30-minute class</span><span className="inline-flex items-center gap-2"><Globe2 className="size-4 text-[#D0A86C]" /> Your local time</span></div>
-      <div className="mt-10"><Link href="/" className="inline-flex items-center gap-3 rounded-[4px] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"><ArrowLeft className="size-4" /> Go Back</Link></div>
+      <div className="mt-10"><Link href="/" className="inline-flex items-center gap-3 rounded-[var(--radius-sm)] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"><ArrowLeft className="size-4" /> Go Back</Link></div>
     </div></div>
   </section>;
 }

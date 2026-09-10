@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import {
   BadgePercent,
   CalendarRange,
@@ -7,7 +7,8 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-import overviewImage from "@/assets/gallery-1.jpg";
+import fallbackOverviewImage from "@/assets/Home-Images/hero.png";
+import { courseImages } from "@/data/course-images";
 import type { CoursePageData } from "@/data/course-pages";
 
 export interface OverviewCounter {
@@ -30,6 +31,7 @@ interface OverviewCompositionProps {
   imageAlt: string;
   id?: string;
   counters?: OverviewCounter[];
+  image?: StaticImageData | string;
 }
 
 export function OverviewComposition({
@@ -38,6 +40,7 @@ export function OverviewComposition({
   imageAlt,
   id = "course-overview",
   counters = courseCounters,
+  image = fallbackOverviewImage,
 }: OverviewCompositionProps) {
   return (
     <section id={id} className="w-full bg-[#FBF6EF] py-20 sm:py-24 min-[1024px]:py-28">
@@ -55,11 +58,15 @@ export function OverviewComposition({
 
           <div className="relative mx-auto aspect-[4/5] w-full max-w-[410px] overflow-hidden">
             <Image
-              src={overviewImage}
+              src={image}
               alt={imageAlt}
               fill
               sizes="(min-width: 1024px) 42vw, 90vw"
-              className="scale-[1.45] object-cover object-[100%_37%]"
+              className={
+                image === fallbackOverviewImage
+                  ? "scale-[1.45] object-cover object-[100%_37%]"
+                  : "object-cover object-center"
+              }
             />
             <div className="pointer-events-none absolute inset-0 bg-[#0D463E]/[0.06]" aria-hidden="true" />
           </div>
@@ -94,6 +101,7 @@ export default function CourseOverview({ course }: { course: CoursePageData }) {
       title={course.overviewTitle}
       description={course.overviewDescription}
       imageAlt={`${course.title} course overview`}
+      image={courseImages[course.url]?.feature ?? fallbackOverviewImage}
     />
   );
 }

@@ -56,7 +56,7 @@ const allFaqs: CategorizedFAQ[] = [
   faq("Technical Support", "Can I download resources on a phone?", "Yes. Standard PDF files can be downloaded and opened using the browser or a PDF reader on most modern phones and tablets."),
   faq("General Support", "Where is Haramain Quran Institute based?", "Haramain Quran Institute is based in Makkah Al-Mukarramah, KSA, while serving online learners across multiple countries and time zones."),
   faq("General Support", "Are classes one-to-one or group based?", "The main learning experience is personalized one-to-one instruction. Any group or free-course format will be clearly identified during registration."),
-  faq("General Support", "How can I contact the institute?", "Use the Free Trial, Help Center, Start Chat, phone, WhatsApp, or email options shown across the website."),
+  faq("General Support", "How can I contact the institute?", "Use the Free Trial, Help Center, phone, WhatsApp, or email options shown across the website."),
   faq("General Support", "Can parents receive progress updates?", "Parents can discuss learning goals and progress with the institute. The exact update process depends on the student's course and plan."),
   faq("General Support", "Do you offer careers for Quran teachers?", "Yes. Visit the Career page to view remote, onsite, and hybrid teaching, academic, admissions, content, and media opportunities."),
   faq("General Support", "How can I stay informed about new content?", "Follow the institute on social media, watch the Sessions page, explore new blog articles, or join the newsletter for updates."),

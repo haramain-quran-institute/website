@@ -1,7 +1,7 @@
 import type { TestimonialsData } from "@/components/sections/TestimonialsSection/types";
-import VideoThumbnail from "@/videos/thumbnails/Screenshot 2026-01-20 131818.png";
-import VideoThumbnail1 from "@/videos/thumbnails/Screenshot 2026-01-20 131846.png";
-import VideoThumbnail2 from "@/videos/thumbnails/Screenshot 2026-01-20 131909.png";
+import VideoThumbnail from "@/videos/thumbnails/1.png";
+import VideoThumbnail1 from "@/videos/thumbnails/2.png";
+import VideoThumbnail2 from "@/videos/thumbnails/3.png";
 
 const testimonialsData: TestimonialsData = {
   title: "What Our Students Say",

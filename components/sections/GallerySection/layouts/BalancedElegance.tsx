@@ -12,19 +12,19 @@ export default function BalancedElegance({
 
   return (
     <div className="grid size-full grid-cols-10 gap-4 md:gap-6">
-      <div className="relative col-span-10 overflow-hidden rounded-lg md:col-span-3">
+      <div className="relative col-span-10 overflow-hidden rounded-[var(--radius-md)] md:col-span-3">
         <MediaRenderer item={media[0]} index={0} onOpen={onOpen} />
       </div>
-      <div className="relative col-span-5 overflow-hidden rounded-lg md:col-span-4">
+      <div className="relative col-span-5 overflow-hidden rounded-[var(--radius-md)] md:col-span-4">
         <MediaRenderer item={media[1]} index={1} onOpen={onOpen} />
       </div>
-      <div className="relative col-span-5 overflow-hidden rounded-lg md:col-span-3">
+      <div className="relative col-span-5 overflow-hidden rounded-[var(--radius-md)] md:col-span-3">
         <MediaRenderer item={media[2]} index={2} onOpen={onOpen} />
       </div>
-      <div className="relative col-span-5 overflow-hidden rounded-lg md:col-span-5">
+      <div className="relative col-span-5 overflow-hidden rounded-[var(--radius-md)] md:col-span-5">
         <MediaRenderer item={media[3]} index={3} onOpen={onOpen} />
       </div>
-      <div className="relative col-span-5 overflow-hidden rounded-lg md:col-span-5">
+      <div className="relative col-span-5 overflow-hidden rounded-[var(--radius-md)] md:col-span-5">
         <MediaRenderer item={media[4]} index={4} onOpen={onOpen} />
       </div>
     </div>

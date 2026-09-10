@@ -68,7 +68,7 @@ function PlanGrid({ group, currency, yearly }: { group: FeeGroup; currency: Curr
         return (
           <article
             key={plan.title}
-            className={`flex min-h-[500px] flex-col rounded-[18px] border p-3 shadow-[0_12px_40px_rgba(13,70,62,0.06)] ${
+            className={`flex min-h-[500px] flex-col rounded-[var(--radius-lg)] border p-3 shadow-[0_12px_40px_rgba(13,70,62,0.06)] ${
               featured ? "border-[#071F1B] bg-[#071F1B] text-white" : "border-[#0D463E]/8 bg-white text-[#0D463E]"
             }`}
           >
@@ -100,7 +100,7 @@ function PlanGrid({ group, currency, yearly }: { group: FeeGroup; currency: Curr
 
               <Link
                 href="/book-free-trial"
-                className={`mt-7 inline-flex w-full items-center justify-center rounded-full border px-4 py-3 font-body text-sm font-semibold transition-colors ${
+                className={`mt-7 inline-flex w-full items-center justify-center rounded-[var(--radius-sm)] border px-4 py-3 font-body text-sm font-semibold transition-colors ${
                   featured
                     ? "border-[#D0A86C] bg-[#D0A86C] text-[#071F1B] hover:bg-transparent hover:text-[#D0A86C]"
                     : "border-[#0D463E]/15 text-[#0D463E] hover:border-[#0D463E] hover:bg-[#0D463E] hover:text-white"
@@ -110,7 +110,7 @@ function PlanGrid({ group, currency, yearly }: { group: FeeGroup; currency: Curr
               </Link>
             </div>
 
-            <div className={`rounded-[14px] p-4 ${featured ? "bg-white text-[#0D463E]" : "bg-[#F1F3F1]"}`}>
+            <div className={`rounded-[var(--radius-md)] p-4 ${featured ? "bg-white text-[#0D463E]" : "bg-[#F1F3F1]"}`}>
               <ul className="grid gap-3.5">
                 {planBenefits.map((benefit) => (
                   <li key={benefit} className="flex items-start gap-2.5 font-body text-[13px] leading-5">
@@ -149,7 +149,7 @@ export default function CoursesFeePricing() {
           </p>
         </div>
 
-        <div className="sticky top-24 z-20 mx-auto mt-10 flex w-fit max-w-full flex-col items-center justify-center gap-5 rounded-[18px] border border-[#0D463E]/10 bg-white/95 px-4 py-3 shadow-lg backdrop-blur min-[760px]:flex-row min-[760px]:gap-8 min-[760px]:px-6">
+        <div className="sticky top-24 z-20 mx-auto mt-10 flex w-fit max-w-full flex-col items-center justify-center gap-5 rounded-[var(--radius-lg)] border border-[#0D463E]/10 bg-white/95 px-4 py-3 shadow-lg backdrop-blur min-[760px]:flex-row min-[760px]:gap-8 min-[760px]:px-6">
           <div className="inline-flex rounded-full border border-[#0D463E]/10 bg-white p-1" aria-label="Select currency">
             {(Object.keys(currencies) as CurrencyCode[]).map((code) => (
               <button

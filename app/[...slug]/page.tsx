@@ -13,7 +13,6 @@ import FAQPage from "@/components/faq-page/FAQPage";
 import OurSessionsPage from "@/components/sessions/OurSessionsPage";
 import TeachersPage from "@/components/teachers/TeachersPage";
 import BookTrialPage from "@/components/book-trial/BookTrialPage";
-import StartChatPage from "@/components/chat/StartChatPage";
 import HelpCenterPage from "@/components/help-center/HelpCenterPage";
 import ResourcePage from "@/components/resources/ResourcePage";
 import { getResourcePage } from "@/components/resources/resource-data";
@@ -93,8 +92,6 @@ export default async function NavigationPage({ params }: RouteProps) {
     content = <TeachersPage />;
   } else if (page.url === "/book-free-trial") {
     content = <BookTrialPage />;
-  } else if (page.url === "/start-chat") {
-    content = <StartChatPage />;
   } else if (page.url === "/help-center") {
     content = <HelpCenterPage />;
   } else {

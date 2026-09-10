@@ -13,7 +13,7 @@ export const TallSplitLayout: React.FC<LayoutProps> = ({ images, altText, ratio,
   if (images.length < 4) return null;
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-4 grid-rows-4 gap-4 absolute inset-0">
           <div className="relative col-span-2 row-span-4">
@@ -69,7 +69,7 @@ export const ReverseTallSplitLayout: React.FC<LayoutProps> = ({ images, altText,
   if (images.length < 4) return null;
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-4 grid-rows-4 gap-4 absolute inset-0">
           <div className="relative col-span-2 row-span-4 col-start-3 row-start-1">
@@ -125,7 +125,7 @@ export const CascadeLayout: React.FC<LayoutProps> = ({ images, altText, ratio, s
   if (images.length < 3) return null;
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-2 grid-rows-2 gap-4 absolute inset-0">
           <div className="relative row-span-2">
@@ -170,7 +170,7 @@ export const ReverseCascadeLayout: React.FC<LayoutProps> = ({ images, altText, r
   if (images.length < 3) return null;
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-2 grid-rows-2 gap-4 absolute inset-0">
           <div className="relative row-span-2 col-start-2 row-start-1">
@@ -215,7 +215,7 @@ export const SpotlightLayout: React.FC<LayoutProps> = ({ images, altText, ratio,
   if (images.length < 3) return null;
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-4 grid-rows-1 gap-4 absolute inset-0">
           <div className="relative col-span-2 col-start-2 row-start-1">
@@ -260,7 +260,7 @@ export const UnoLayout: React.FC<LayoutProps> = ({ images, altText, ratio, start
   if (images.length < 1) return null;
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-1 grid-rows-1  gap-4 absolute inset-0">
           <div className="relative">
@@ -283,7 +283,7 @@ export const DuoLayout: React.FC<LayoutProps> = ({ images, altText, ratio, start
   if (images.length < 2) return null;
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-2 grid-rows-1  gap-4 absolute inset-0">
           <div className="relative">
@@ -317,7 +317,7 @@ export const TrioLayout: React.FC<LayoutProps> = ({ images, altText, ratio, star
   if (images.length < 3) return null;
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-3 grid-rows-1  gap-4 absolute inset-0">
           <div className="relative">
@@ -363,7 +363,7 @@ export const QuadLayout: React.FC<LayoutProps> = ({ images, altText, ratio, star
   if (images.length < 4) return null;
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-4 grid-rows-1  gap-4 absolute inset-0">
           <div className="relative">

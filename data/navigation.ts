@@ -60,7 +60,6 @@ export const navigationItems: NavigationSection[] = [
     title: "Contact Us",
     subItems: [
       { title: "Book Free Trial", description: "Schedule your complimentary trial class today.", url: "/book-free-trial" },
-      { title: "Start Chat", description: "Connect with our support team directly.", url: "/start-chat" },
       { title: "Help Center", description: "Get support and find helpful information.", url: "/help-center" },
     ],
   },

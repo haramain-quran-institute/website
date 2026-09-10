@@ -2,10 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, CalendarDays, GraduationCap, UserRound } from "lucide-react";
 
-import heroImage from "@/assets/gallery-1.jpg";
+import fallbackHeroImage from "@/assets/Home-Images/hero.png";
+import { courseImages } from "@/data/course-images";
 import type { CoursePageData } from "@/data/course-pages";
 
 export default function CourseHero({ course }: { course: CoursePageData }) {
+  const heroImage = courseImages[course.url]?.hero ?? fallbackHeroImage;
+
   return (
     <section className="relative flex min-h-[680px] items-end overflow-hidden pb-20 pt-40 text-white min-[768px]:min-h-[740px] min-[1024px]:pb-24">
       <Image
@@ -40,9 +43,9 @@ export default function CourseHero({ course }: { course: CoursePageData }) {
           <div className="mt-10">
             <Link
               href="/#courses"
-              className="inline-flex items-center gap-3 rounded-[4px] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"
+              className="inline-flex items-center gap-3 rounded-[var(--radius-sm)] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"
             >
-              <ArrowLeft className="size-4" /> Explore Quran Courses
+              <ArrowLeft className="size-4" /> Go Back
             </Link>
           </div>
         </div>

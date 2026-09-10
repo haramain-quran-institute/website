@@ -56,11 +56,11 @@ const ProductGrid: React.FC<ProductGridProps> = ({
         </div>
         {seperator && (
           <div className="flex w-full flex-row items-center justify-between gap-1">
-            <div className="h-[2px] w-full rounded bg-EbonyShadow-100"></div>
+            <div className="h-[2px] w-full rounded-[var(--radius-sm)] bg-EbonyShadow-100"></div>
             <span className="text- min-w-fit text-center text-[8px] font-extralight leading-none tracking-wider sm:text-[9px] md:text-[10px]">
               The Premier Experience Awaits
             </span>
-            <div className="h-[2px] w-full rounded bg-EbonyShadow-100"></div>
+            <div className="h-[2px] w-full rounded-[var(--radius-sm)] bg-EbonyShadow-100"></div>
           </div>
         )}
         <div className="grid w-full grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-4 smd:gap-x-8 md:grid-cols-3 md:gap-x-12">

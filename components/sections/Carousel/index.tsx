@@ -49,7 +49,7 @@ function CarouselGallery({
 }: CarouselGalleryProps) {
   return (
     <Carousel className="group flex w-full flex-col gap-2" opts={{ loop: true }}>
-      <div className="relative overflow-hidden rounded-lg">
+      <div className="relative overflow-hidden rounded-[var(--radius-md)]">
         {addLink && url ? (
           <Link href={url}>
             <CarouselGalleryChildren imgSrc={imgSrc} altText={altText} ratio={ratio} />

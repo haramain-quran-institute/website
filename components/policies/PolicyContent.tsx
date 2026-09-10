@@ -6,7 +6,7 @@ export default function PolicyContent({ policy }: { policy: PolicyPageData }) {
   return (
     <section className="bg-[#FBF6EF] py-16 sm:py-20 min-[1024px]:py-24">
       <div className="container">
-        <div className="rounded-[14px] border border-[#0D463E]/10 bg-white p-5 sm:p-7">
+        <div className="rounded-[var(--radius-md)] border border-[#0D463E]/10 bg-white p-5 sm:p-7">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-start gap-3">
               <span className="grid size-10 shrink-0 place-items-center rounded-full bg-[#0D463E] text-[#D0A86C]">
@@ -28,7 +28,7 @@ export default function PolicyContent({ policy }: { policy: PolicyPageData }) {
         </div>
 
         <div className="mt-10 grid items-start gap-8 min-[1024px]:grid-cols-[280px_minmax(0,1fr)] min-[1200px]:gap-12">
-          <aside className="rounded-[14px] border border-[#0D463E]/10 bg-white p-6 min-[1024px]:sticky min-[1024px]:top-28">
+          <aside className="rounded-[var(--radius-md)] border border-[#0D463E]/10 bg-white p-6 min-[1024px]:sticky min-[1024px]:top-28">
             <h2 className="font-heading text-xl font-semibold text-[#0D463E]">
               On this page
             </h2>
@@ -54,7 +54,7 @@ export default function PolicyContent({ policy }: { policy: PolicyPageData }) {
             </nav>
           </aside>
 
-          <article className="min-w-0 overflow-hidden rounded-[14px] border border-[#0D463E]/10 bg-white px-5 py-2 sm:px-8 min-[1200px]:px-12">
+          <article className="min-w-0 overflow-hidden rounded-[var(--radius-md)] border border-[#0D463E]/10 bg-white px-5 py-2 sm:px-8 min-[1200px]:px-12">
             {policy.sections.map((section, index) => (
               <section
                 key={section.id}

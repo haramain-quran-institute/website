@@ -28,7 +28,7 @@ export default function BranchContacts() {
           {helpCenterBranches.map((branch) => (
             <article
               key={branch.code}
-              className="group overflow-hidden rounded-[16px] border border-[#0D463E]/10 bg-[#FBF6EF] transition-transform duration-300 hover:-translate-y-1"
+              className="group overflow-hidden rounded-[var(--radius-lg)] border border-[#0D463E]/10 bg-[#FBF6EF] transition-transform duration-300 hover:-translate-y-1"
             >
               <div className="bg-[#0D463E] p-7 text-white">
                 <span className="inline-flex rounded-full border border-white/20 px-3 py-1 font-body text-[10px] font-bold uppercase tracking-[0.18em] text-[#D0A86C]">

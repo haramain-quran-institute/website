@@ -67,7 +67,7 @@ export default function GalleryLightboxDialog({
           -translate-x-1/2
           -translate-y-1/2
           overflow-visible
-          rounded-[16px]
+          rounded-[var(--radius-lg)]
           border
           border-white
           bg-black
@@ -96,7 +96,7 @@ export default function GalleryLightboxDialog({
             align-items: center;
             justify-content: center;
             background: #000;
-            border-radius: 12px;
+            border-radius: var(--radius-md);
             overflow: hidden;
           }
 

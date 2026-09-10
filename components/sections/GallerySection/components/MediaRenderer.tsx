@@ -29,7 +29,7 @@ export default function MediaRenderer({
 
   return (
     <div
-      className={`group container-type-inline relative size-full overflow-hidden rounded-lg ${
+      className={`group container-type-inline relative size-full overflow-hidden rounded-[var(--radius-md)] ${
         isLink ? "cursor-default" : "cursor-pointer"
       }`}
       onClick={handleClick}

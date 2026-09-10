@@ -13,19 +13,19 @@ export default function EditorialGrid({
   return (
     <div className="grid size-full grid-cols-12 gap-4">
       <div className="col-span-3 flex flex-col gap-4">
-        <div className="relative flex-1 overflow-hidden rounded-lg">
+        <div className="relative flex-1 overflow-hidden rounded-[var(--radius-md)]">
           <MediaRenderer item={media[0]} index={0} onOpen={onOpen} />
         </div>
-        <div className="relative flex-1 overflow-hidden rounded-lg">
+        <div className="relative flex-1 overflow-hidden rounded-[var(--radius-md)]">
           <MediaRenderer item={media[1]} index={1} onOpen={onOpen} />
         </div>
       </div>
 
-      <div className="relative col-span-6 overflow-hidden rounded-lg">
+      <div className="relative col-span-6 overflow-hidden rounded-[var(--radius-md)]">
         <MediaRenderer item={media[2]} index={2} onOpen={onOpen} />
       </div>
 
-      <div className="relative col-span-3 overflow-hidden rounded-lg">
+      <div className="relative col-span-3 overflow-hidden rounded-[var(--radius-md)]">
         <MediaRenderer item={media[3]} index={3} onOpen={onOpen} />
       </div>
     </div>

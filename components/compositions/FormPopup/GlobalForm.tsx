@@ -502,7 +502,7 @@ export default function GlobalForm({ source }: GlobalFormProps) {
           </p>
 
           {selectedDate && selectedTime && (
-            <div className="mt-3 rounded-xl border border-[#0D463E]/15 bg-[#0D463E]/5 px-6 py-4 text-left">
+            <div className="mt-3 rounded-[var(--radius-md)] border border-[#0D463E]/15 bg-[#0D463E]/5 px-6 py-4 text-left">
               <p className="font-bricolage text-body_xxs text-[#0D463E]">
                 {formatDate(selectedDate)}
               </p>
@@ -559,12 +559,12 @@ export default function GlobalForm({ source }: GlobalFormProps) {
               </p>
             </div>
 
-            <div className="rounded-2xl border border-[#0D463E]/15 bg-[#FBF6EF] p-5">
+            <div className="rounded-[var(--radius-lg)] border border-[#0D463E]/15 bg-[#FBF6EF] p-5">
               <div className="mb-5 flex items-center justify-between">
                 <button
                   type="button"
                   onClick={previousMonth}
-                  className="rounded-lg p-2 text-[#0D463E] transition hover:bg-[#0D463E]/10 hover:text-[#0A3E37]"
+                  className="rounded-[var(--radius-md)] p-2 text-[#0D463E] transition hover:bg-[#0D463E]/10 hover:text-[#0A3E37]"
                 >
                   <ChevronLeft className="size-5" />
                 </button>
@@ -582,7 +582,7 @@ export default function GlobalForm({ source }: GlobalFormProps) {
                 <button
                   type="button"
                   onClick={nextMonth}
-                  className="rounded-lg p-2 text-[#0D463E] transition hover:bg-[#0D463E]/10 hover:text-[#0A3E37]"
+                  className="rounded-[var(--radius-md)] p-2 text-[#0D463E] transition hover:bg-[#0D463E]/10 hover:text-[#0A3E37]"
                 >
                   <ChevronRight className="size-5" />
                 </button>
@@ -641,7 +641,7 @@ export default function GlobalForm({ source }: GlobalFormProps) {
                           setError(null);
                         }}
                         className={cn(
-                          "aspect-square rounded-xl font-bricolage text-sm transition-all",
+                          "aspect-square rounded-[var(--radius-md)] font-bricolage text-sm transition-all",
                           available
                             ? "text-[#161513] hover:bg-[#D0A86C]/15"
                             : "cursor-not-allowed text-[#777571]/30",
@@ -658,7 +658,7 @@ export default function GlobalForm({ source }: GlobalFormProps) {
             </div>
 
             {selectedDate && (
-              <div className="flex items-center gap-3 rounded-xl border border-[#D0A86C]/30 bg-[#D0A86C]/10 p-4">
+              <div className="flex items-center gap-3 rounded-[var(--radius-md)] border border-[#D0A86C]/30 bg-[#D0A86C]/10 p-4">
                 <CalendarDays className="size-5 text-[#D0A86C]" />
 
                 <div>
@@ -714,7 +714,7 @@ export default function GlobalForm({ source }: GlobalFormProps) {
               </p>
             </div>
 
-            <div className="flex items-center gap-3 rounded-xl border border-[#0D463E]/15 bg-[#FBF6EF] p-4">
+            <div className="flex items-center gap-3 rounded-[var(--radius-md)] border border-[#0D463E]/15 bg-[#FBF6EF] p-4">
               <Clock3 className="size-5 text-[#D0A86C]" />
 
               <div>
@@ -745,7 +745,7 @@ export default function GlobalForm({ source }: GlobalFormProps) {
                       setError(null);
                     }}
                     className={cn(
-                      "rounded-xl border px-4 py-3 text-center font-bricolage text-body_xxxs transition-all",
+                      "rounded-[var(--radius-md)] border px-4 py-3 text-center font-bricolage text-body_xxxs transition-all",
                       selected
                         ? "!border-[#0D463E] !bg-[#0D463E] !text-[#FBF6EF]"
                         : "border-[#0D463E]/15 bg-[#FBF6EF] text-[#161513] hover:border-[#D0A86C]/60 hover:bg-[#D0A86C]/10",
@@ -1227,7 +1227,7 @@ export default function GlobalForm({ source }: GlobalFormProps) {
               </p>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-[#0D463E]/15 bg-[#FBF6EF]">
+            <div className="overflow-hidden rounded-[var(--radius-lg)] border border-[#0D463E]/15 bg-[#FBF6EF]">
               <div className="border-b border-[#0D463E]/10 p-5">
                 <div className="flex items-start gap-4">
                   <CalendarDays className="mt-1 size-5 shrink-0 text-[#D0A86C]" />

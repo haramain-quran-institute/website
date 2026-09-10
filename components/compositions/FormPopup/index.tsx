@@ -55,7 +55,7 @@ export default function FormPopup({
 
   return (
     <AlertDialog defaultOpen>
-      <AlertDialogContent className="flex h-[94vh] w-[96vw] max-w-[1400px] flex-col items-end gap-0 overflow-hidden rounded-2xl border border-[#0D463E]/10 bg-[#FBF6EF] p-0">
+      <AlertDialogContent className="flex h-[94vh] w-[96vw] max-w-[1400px] flex-col items-end gap-0 overflow-hidden rounded-[var(--radius-lg)] border border-[#0D463E]/10 bg-[#FBF6EF] p-0">
         <AlertDialogTitle className="sr-only">
           Book Your Free Trial Class
         </AlertDialogTitle>
@@ -158,7 +158,7 @@ export default function FormPopup({
                           ? "Email copied"
                           : "Copy email"
                       }
-                      className="flex size-7 shrink-0 items-center justify-center rounded-md text-[#777571] transition-all hover:bg-[#0D463E]/10 hover:text-[#0D463E] active:scale-95"
+                      className="flex size-7 shrink-0 items-center justify-center rounded-[var(--radius-sm)] text-[#777571] transition-all hover:bg-[#0D463E]/10 hover:text-[#0D463E] active:scale-95"
                     >
                       <Copy className="size-3.5" />
                     </button>

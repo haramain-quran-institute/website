@@ -1,0 +1,57 @@
+.overlay {
+  animation: winter-overlay-in 260ms ease-out forwards;
+}
+
+.overlay[data-state="closed"] {
+  animation: winter-overlay-out 220ms ease-in forwards;
+}
+
+.panel {
+  animation: winter-popup-in 360ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  transform-origin: center;
+}
+
+.positioner[data-state="closed"] .panel {
+  animation: winter-popup-out 220ms ease-in forwards;
+}
+
+@keyframes winter-overlay-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes winter-overlay-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes winter-popup-in {
+  from {
+    opacity: 0;
+    transform: translateY(2%) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes winter-popup-out {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(1%) scale(0.98);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay,
+  .overlay[data-state="closed"],
+  .panel,
+  .positioner[data-state="closed"] .panel {
+    animation-duration: 1ms;
+  }
+}

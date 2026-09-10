@@ -61,7 +61,7 @@ export default function TextSection({
               "flex flex-col gap-9",
               wrapAlign,
               showGlass &&
-                "rounded-3xl bg-white/60 px-6 py-12 ring-1 ring-black/5 backdrop-blur-md sm:px-10",
+                "rounded-[var(--radius-lg)] bg-white/60 px-6 py-12 ring-1 ring-black/5 backdrop-blur-md sm:px-10",
             )}
           >
             {showIcon && (

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useContext, useEffect, useRef, useState } from "react";
 import { FormPopupContext } from "@/context/FormPopupContext";
 
-import BackgroundImage from "@/assets/FAQ.jpg";
+import BackgroundImage from "@/assets/FooterCTA-Images/footercta.jpg";
 
 export default function FooterCTA() {
   const { openFormPopup } = useContext(FormPopupContext);
@@ -67,7 +67,7 @@ export default function FooterCTA() {
             transform: `scale(${scale})`,
             transition: "transform 0.3s ease-out",
           }}
-          className="relative grid min-h-[380px] w-full place-content-stretch place-items-stretch overflow-hidden rounded-md min-[576px]:min-h-[420px]"
+          className="relative grid min-h-[380px] w-full place-content-stretch place-items-stretch overflow-hidden rounded-[var(--radius-sm)] min-[576px]:min-h-[420px]"
         >
           {/* BACKGROUND IMAGE */}
           <Image

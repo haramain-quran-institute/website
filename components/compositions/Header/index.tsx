@@ -56,7 +56,7 @@ export default function Header({ navItemsData }: HeaderProps) {
       }`}
     >
       <div
-        className={`mx-auto flex min-h-16 w-[calc(100%-32px)] max-w-[1330px] items-stretch justify-between rounded-[4px] px-6 py-2 transition-all duration-200 md:min-h-20 ${
+        className={`mx-auto flex min-h-16 w-[calc(100%-32px)] max-w-[1330px] items-stretch justify-between rounded-[var(--radius-sm)] px-6 py-2 transition-all duration-200 md:min-h-20 ${
           bgBlur
             ? "bg-[#0A1815]/100 shadow-lg backdrop-blur-xl"
             : "bg-transparent shadow-none backdrop-blur-xl"

@@ -1,5 +1,6 @@
 import { ArrowUpRight, BookHeart, BookOpenCheck, CircleUserRound, GraduationCap, HeartHandshake, Lightbulb, ListChecks, UsersRound } from "lucide-react";
 
+import freeCoursesFeatureImage from "@/assets/FreeCourses-Images/feature.png";
 import { OverviewComposition, type OverviewCounter } from "@/components/course/CourseOverview";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
@@ -99,6 +100,7 @@ export default function FreeCoursesPage() {
         description="These free courses are created for children, families, beginners, and anyone who wants to strengthen essential Islamic knowledge. You will learn practical beliefs, worship, manners, duas, and daily guidance; joining begins with a simple registration, and every lesson can become the first step toward a deeper, structured learning journey with Haramain Quran Institute."
         imageAlt="A welcoming path through free Islamic learning"
         counters={learningPath}
+        image={freeCoursesFeatureImage}
       />
       <TeacherExpertiseSection
         id="free-course-benefits"

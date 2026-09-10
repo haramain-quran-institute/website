@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, BookOpenCheck, PlayCircle, Sparkles } from "lucide-react";
 
-import heroImage from "@/assets/gallery-4.jpg";
+import heroImage from "@/assets/OurSessions-Images/hero.png";
 
 export default function OurSessionsHero() {
   return (
@@ -21,7 +21,7 @@ export default function OurSessionsHero() {
             <span className="inline-flex items-center gap-2"><Sparkles className="size-4 text-[#D0A86C]" /> Fresh inspiration</span>
           </div>
           <div className="mt-10">
-            <Link href="/" className="inline-flex items-center gap-3 rounded-[4px] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]">
+            <Link href="/" className="inline-flex items-center gap-3 rounded-[var(--radius-sm)] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]">
               <ArrowLeft className="size-4" /> Go Back
             </Link>
           </div>

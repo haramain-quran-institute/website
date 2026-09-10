@@ -27,7 +27,7 @@ export default function NewsletterCTA() {
   return (
     <section className="w-full bg-[#FBF6EF] py-20 sm:py-24">
       <div className="container">
-        <div className="relative overflow-hidden rounded-[8px] bg-[#071F1B] px-6 py-16 text-center sm:px-10 sm:py-20">
+        <div className="relative overflow-hidden rounded-[var(--radius-md)] bg-[#071F1B] px-6 py-16 text-center sm:px-10 sm:py-20">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(208,168,108,0.2),transparent_45%)]" />
           <div className="relative mx-auto max-w-3xl">
             <Mail className="mx-auto size-10 text-[#D0A86C]" />
@@ -35,15 +35,15 @@ export default function NewsletterCTA() {
             <h2 className="mt-4 font-heading text-4xl font-medium leading-tight text-white sm:text-5xl">Stay Connected with Beneficial Knowledge</h2>
             <p className="mx-auto mt-5 max-w-2xl font-body text-base leading-7 text-white/65">Receive new Quran learning articles, practical Islamic guidance, helpful reminders, and institute updates directly in your inbox.</p>
             {subscribed ? (
-              <div className="mx-auto mt-9 flex max-w-md items-center justify-center gap-3 rounded-[8px] bg-white/10 px-5 py-4 font-body text-sm text-white">
+              <div className="mx-auto mt-9 flex max-w-md items-center justify-center gap-3 rounded-[var(--radius-md)] bg-white/10 px-5 py-4 font-body text-sm text-white">
                 <CheckCircle2 className="size-5 text-[#D0A86C]" /> Thank you for joining our newsletter.
               </div>
             ) : (
               <form onSubmit={submit} className="mx-auto mt-9 max-w-xl">
                 <div className="flex flex-col gap-3 sm:flex-row">
                   <label htmlFor="newsletter-email" className="sr-only">Email address</label>
-                  <input id="newsletter-email" name="email" type="email" required maxLength={254} placeholder="Enter your email address" className="min-h-12 flex-1 rounded-[6px] border border-white/15 bg-white/10 px-4 font-body text-sm text-white outline-none placeholder:text-white/45 focus:border-[#D0A86C]" />
-                  <button disabled={pending} type="submit" className="min-h-12 rounded-[6px] bg-[#D0A86C] px-7 font-body text-sm font-bold text-[#071F1B] transition-colors hover:bg-[#FBF6EF] disabled:cursor-not-allowed disabled:opacity-60">{pending ? "Subscribing..." : "Subscribe"}</button>
+                  <input id="newsletter-email" name="email" type="email" required maxLength={254} placeholder="Enter your email address" className="min-h-12 flex-1 rounded-[var(--radius-sm)] border border-white/15 bg-white/10 px-4 font-body text-sm text-white outline-none placeholder:text-white/45 focus:border-[#D0A86C]" />
+                  <button disabled={pending} type="submit" className="min-h-12 rounded-[var(--radius-sm)] bg-[#D0A86C] px-7 font-body text-sm font-bold text-[#071F1B] transition-colors hover:bg-[#FBF6EF] disabled:cursor-not-allowed disabled:opacity-60">{pending ? "Subscribing..." : "Subscribe"}</button>
                 </div>
                 {error && <p role="alert" className="mt-3 font-body text-sm text-red-200">{error}</p>}
               </form>

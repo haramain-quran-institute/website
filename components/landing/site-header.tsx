@@ -69,7 +69,7 @@ function DesktopNavigation() {
                       <li key={item.url}>
                         <Link
                           href={item.url}
-                          className="group block rounded-[4px] p-3 transition-colors hover:bg-[#0A3E37] focus:bg-[#0A3E37] focus:outline-none"
+                          className="group block rounded-[var(--radius-sm)] p-3 transition-colors hover:bg-[#0A3E37] focus:bg-[#0A3E37] focus:outline-none"
                         >
                           <span className="block font-body text-[14px] font-semibold leading-none text-white">
                             {item.title}
@@ -122,7 +122,7 @@ function MobileNavigation() {
                       {section.subItems.map((item) => (
                         <li key={item.url}>
                           <SheetClose asChild>
-                            <Link href={item.url} className="block rounded-[4px] bg-white/[0.04] p-3 hover:bg-white/[0.08]">
+                            <Link href={item.url} className="block rounded-[var(--radius-sm)] bg-white/[0.04] p-3 hover:bg-white/[0.08]">
                               <span className="block font-body text-sm font-semibold text-white">{item.title}</span>
                               <span className="mt-1 block font-body text-xs leading-5 text-white/60">{item.description}</span>
                             </Link>
@@ -161,7 +161,7 @@ export function SiteHeader() {
 
   return (
     <header className={cn("fixed inset-x-0 top-4 z-50 transition-transform duration-200", hidden && "max-[1099px]:-translate-y-[140%]")}>
-      <div className={cn("mx-auto flex min-h-16 w-[calc(100%-32px)] max-w-[1330px] items-center justify-between rounded-[4px] px-5 py-2 transition-all duration-200 md:min-h-20 md:px-7", scrolled ? "bg-[#071F1B]/95 shadow-xl backdrop-blur-xl" : "bg-transparent shadow-none backdrop-blur-none")}>
+      <div className={cn("mx-auto flex min-h-16 w-[calc(100%-32px)] max-w-[1330px] items-center justify-between rounded-[var(--radius-sm)] px-5 py-2 transition-all duration-200 md:min-h-20 md:px-7", scrolled ? "bg-[#071F1B]/95 shadow-xl backdrop-blur-xl" : "bg-transparent shadow-none backdrop-blur-none")}>
         <InstituteMark />
         <DesktopNavigation />
         <div className="hidden min-[1100px]:block"><TrialPopup triggerLabel="Free Trial Class" /></div>

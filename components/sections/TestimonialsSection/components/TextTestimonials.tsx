@@ -40,7 +40,7 @@ export default function TextTestimonials({
                     key={testimonial.id}
                     className="min-w-0 flex-[0_0_100%] pl-3 md:flex-[0_0_50%] lg:flex-[0_0_33.333%]"
                   >
-                    <div className="flex h-[125px] w-full flex-col justify-center rounded-[0.4rem] bg-[#0D463E] px-6 py-4 shadow-sm">
+                    <div className="flex h-[125px] w-full flex-col justify-center rounded-[var(--radius-sm)] bg-[#0D463E] px-6 py-4 shadow-sm">
                       {/* STAR + NAME + COUNTRY */}
                       <div className="flex min-w-0 items-center gap-2">
                         <div className="flex shrink-0 items-center gap-0.5">

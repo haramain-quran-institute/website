@@ -82,7 +82,7 @@ export const CookieBanner = () => {
   return (
     <section
       id="cookie-banner"
-      className="fixed bottom-4 left-4 z-50 flex w-[calc(100%-32px)] max-h-[calc(100%-32px)] overflow-hidden rounded-lg bg-EbonyShadow-100 text-PearlWhite shadow-[0_0_7px_rgba(251,246,239,.14)]"
+      className="fixed bottom-4 left-4 z-50 flex w-[calc(100%-32px)] max-h-[calc(100%-32px)] overflow-hidden rounded-[var(--radius-md)] bg-EbonyShadow-100 text-PearlWhite shadow-[0_0_7px_rgba(251,246,239,.14)]"
     >
       <div className="container py-12 overflow-y-auto">
         {showCustomize ? (

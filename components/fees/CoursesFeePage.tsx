@@ -1,4 +1,5 @@
 import { OverviewComposition } from "@/components/course/CourseOverview";
+import coursesFeeFeatureImage from "@/assets/CoursesFee-Images/feature.png";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import FAQSection from "@/components/sections/FAQSection";
@@ -54,6 +55,7 @@ export default function CoursesFeePage() {
         title="Why Choose Haramain Quran Institute?"
         description="Our qualified teachers combine one-to-one attention, flexible scheduling, clear fee plans, and consistent progress guidance. Every learner receives a structured experience shaped around their level, goals, and routine."
         imageAlt="Why families choose Haramain Quran Institute"
+        image={coursesFeeFeatureImage}
       />
       <FAQSection id="courses-fee-faqs" title="Courses Fee FAQs" faqs={coursesFeeFaqs} />
       <SiteFooter />

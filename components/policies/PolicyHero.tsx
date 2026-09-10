@@ -1,19 +1,19 @@
-import Image from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
 import { ArrowLeft, BookOpenCheck, Globe2, ShieldCheck } from "lucide-react";
-
-import heroImage from "@/assets/gallery-9.jpg";
 
 interface PolicyHeroProps {
   title: string;
   eyebrow: string;
   description: string;
+  heroImage: StaticImageData;
 }
 
 export default function PolicyHero({
   title,
   eyebrow,
   description,
+  heroImage,
 }: PolicyHeroProps) {
   return (
     <section className="relative flex min-h-[610px] items-end overflow-hidden pb-20 pt-40 text-white min-[768px]:min-h-[690px] min-[1024px]:pb-24">
@@ -55,7 +55,7 @@ export default function PolicyHero({
           <div className="mt-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-3 rounded-[4px] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"
+              className="inline-flex items-center gap-3 rounded-[var(--radius-sm)] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"
             >
               <ArrowLeft className="size-4" /> Go Back
             </Link>

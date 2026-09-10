@@ -26,13 +26,13 @@ export default function VideoTestimonialCard({
   return (
     <div className="relative aspect-[4/5] w-full min-w-0">
       {backThumbnail && (
-        <div className="absolute top-4 left-4 z-0 h-full w-full overflow-hidden rounded-[0.8rem] bg-[#0D463E]/10 transition-all duration-500 ease-out">
+        <div className="absolute top-4 left-4 z-0 h-full w-full overflow-hidden rounded-[var(--radius-md)] bg-[#0D463E]/10 transition-all duration-500 ease-out">
           <Image src={backThumbnail} alt="" fill sizes={responsiveSizes} className="object-cover opacity-25" aria-hidden="true" />
         </div>
       )}
 
       {middleThumbnail && (
-        <div className="absolute top-2 left-2 z-10 h-full w-full overflow-hidden rounded-[0.8rem] bg-[#0D463E] transition-all duration-500 ease-out">
+        <div className="absolute top-2 left-2 z-10 h-full w-full overflow-hidden rounded-[var(--radius-md)] bg-[#0D463E] transition-all duration-500 ease-out">
           <Image src={middleThumbnail} alt="" fill sizes={responsiveSizes} className="object-cover opacity-35" aria-hidden="true" />
         </div>
       )}
@@ -40,7 +40,7 @@ export default function VideoTestimonialCard({
       <button
         type="button"
         onClick={onPlayClick}
-        className="group absolute inset-0 z-20 size-full cursor-pointer overflow-hidden rounded-[0.8rem] bg-[#0D463E] text-left shadow-2xl transition-all duration-500 ease-out"
+        className="group absolute inset-0 z-20 size-full cursor-pointer overflow-hidden rounded-[var(--radius-md)] bg-[#0D463E] text-left shadow-2xl transition-all duration-500 ease-out"
         aria-label="Play student testimonial"
       >
         <Image

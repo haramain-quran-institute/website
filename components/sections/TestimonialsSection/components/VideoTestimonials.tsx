@@ -6,18 +6,17 @@ import VideoTestimonialCard from "./VideoTestimonialCard";
 import VideoTestimonialDialog from "./VideoTestimonialDialog";
 import type { VideoTestimonialsData } from "../types";
 
-const youtubeTestimonials = ["R3JpYbTgJjg", "XEn66FxVgH8", "L67IjYgMK5I"];
-
 export default function VideoTestimonials({ item }: { item: VideoTestimonialsData }) {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [activeVideo, setActiveVideo] = useState(0);
+  const totalVideos = item.testimonial.videoThumbnail.length;
 
   const nextVideo = () => {
-    setActiveVideo((current) => current === youtubeTestimonials.length - 1 ? 0 : current + 1);
+    setActiveVideo((current) => current === totalVideos - 1 ? 0 : current + 1);
   };
 
   const previousVideo = () => {
-    setActiveVideo((current) => current === 0 ? youtubeTestimonials.length - 1 : current - 1);
+    setActiveVideo((current) => current === 0 ? totalVideos - 1 : current - 1);
   };
 
   return (
@@ -46,7 +45,7 @@ export default function VideoTestimonials({ item }: { item: VideoTestimonialsDat
                 <VideoTestimonialCard
                   item={item.testimonial}
                   activeIndex={activeVideo}
-                  totalVideos={youtubeTestimonials.length}
+                  totalVideos={totalVideos}
                   onPlayClick={() => setDialogOpen(true)}
                 />
               </div>
@@ -58,7 +57,7 @@ export default function VideoTestimonials({ item }: { item: VideoTestimonialsDat
       <VideoTestimonialDialog
         open={dialogOpen}
         onOpenChange={setDialogOpen}
-        videoId={youtubeTestimonials[activeVideo]}
+        thumbnails={item.testimonial.videoThumbnail}
         currentIndex={activeVideo}
         onPrevious={previousVideo}
         onNext={nextVideo}

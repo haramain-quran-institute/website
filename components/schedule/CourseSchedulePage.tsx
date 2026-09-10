@@ -12,6 +12,7 @@ import {
   UserRoundCheck,
 } from "lucide-react";
 
+import courseScheduleFeatureImage from "@/assets/CourseSchedule-Images/feature.png";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import FAQSection from "@/components/sections/FAQSection";
@@ -60,6 +61,7 @@ export default function CourseSchedulePage() {
         description="Wherever you live and whatever your routine looks like, our scheduling team helps you build a consistent Quran learning plan. Flexible teacher availability makes meaningful one-to-one learning accessible across countries and time zones."
         imageAlt="Flexible Quran classes available for students worldwide"
         features={availabilityFeatures}
+        image={courseScheduleFeatureImage}
       />
       <TeacherExpertiseSection
         title="Learn with the Right Teacher"

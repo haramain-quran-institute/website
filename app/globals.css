@@ -77,9 +77,9 @@
   --leading-normal: 1.4;
   --leading-relaxed: 1.65;
   --leading-loose: 1.75;
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-sm: calc(var(--radius) - 4px);
+  --radius-sm: 0.4rem;
+  --radius-md: 0.4rem;
+  --radius-lg: 0.4rem;
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
   --animate-fade-in: fade-in 0.2s ease-out forwards;
@@ -91,6 +91,11 @@
 @keyframes fade-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes fade-slide-down { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes booking-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes assistant-overlay-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes assistant-overlay-out { from { opacity: 1; visibility: visible; } to { opacity: 0; visibility: hidden; } }
+@keyframes assistant-widget-in { from { opacity: 0; transform: translateY(12px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes assistant-widget-out { from { opacity: 1; transform: translateY(0) scale(1); visibility: visible; } to { opacity: 0; transform: translateY(12px) scale(0.98); visibility: hidden; } }
+@keyframes assistant-launcher-halo { 0%, 70%, 100% { opacity: 0; transform: scale(1); } 82% { opacity: 0.12; transform: scale(1.18); } }
 
 @layer base {
   :root {
@@ -103,7 +108,7 @@
     --accent: 37 50% 62%; --accent-foreground: 170 68% 16%;
     --destructive: 0 84.2% 60.2%; --destructive-foreground: 60 9.1% 97.8%;
     --border: 37 20% 82%; --input: 37 20% 82%; --ring: 37 50% 62%;
-    --radius: 0.75rem;
+    --radius: 0.4rem;
   }
 
   * { @apply border-border; }
@@ -151,5 +156,13 @@
 .custom-scrollbar::-webkit-scrollbar { width: 4px; }
 .custom-scrollbar::-webkit-scrollbar-track { background: hsl(170 68% 16% / 0.2); }
 .custom-scrollbar::-webkit-scrollbar-thumb { background-color: hsl(170 68% 16%); }
+.assistant-launcher::before { animation: assistant-launcher-halo 4s ease-in-out infinite; background: #0D463E; border-radius: inherit; content: ""; inset: 0; pointer-events: none; position: absolute; }
+.assistant-scrollbar { scrollbar-color: rgba(13, 70, 62, 0.24) transparent; scrollbar-width: thin; }
+.assistant-scrollbar::-webkit-scrollbar { width: 5px; }
+.assistant-scrollbar::-webkit-scrollbar-track { background: transparent; }
+.assistant-scrollbar::-webkit-scrollbar-thumb { background: rgba(13, 70, 62, 0.24); border-radius: 999px; }
+.assistant-composer textarea::-webkit-scrollbar { width: 3px; }
+.assistant-composer textarea::-webkit-scrollbar-track { background: transparent; }
+.assistant-composer textarea::-webkit-scrollbar-thumb { background: rgba(13, 70, 62, 0.2); border-radius: 999px; }
 header nav a, header nav button { color: #fff !important; }
 header nav a:hover, header nav button:hover, header nav button[data-state="open"] { color: #fff !important; }

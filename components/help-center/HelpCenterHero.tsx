@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock3, Globe2, Headphones } from "lucide-react";
 
-import heroImage from "@/assets/gallery-8.jpg";
+import heroImage from "@/assets/HelpCenter-Images/hero.png";
 
 export default function HelpCenterHero() {
   return (
@@ -46,7 +46,7 @@ export default function HelpCenterHero() {
           <div className="mt-10">
             <Link
               href="/"
-              className="inline-flex items-center gap-3 rounded-[4px] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"
+              className="inline-flex items-center gap-3 rounded-[var(--radius-sm)] bg-[#FBF6EF] px-7 py-4 font-body text-sm font-semibold text-[#0D463E] transition-colors hover:bg-[#D0A86C]"
             >
               <ArrowLeft className="size-4" /> Go Back
             </Link>

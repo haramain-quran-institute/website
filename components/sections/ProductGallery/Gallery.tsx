@@ -20,7 +20,7 @@ function GalleryContainer({ images, ratio }: GalleryContainerProps) {
   const { openGalleryPopup } = useContext(GalleryPopupContext);
 
   return (
-    <AspectRatio ratio={ratio} className="overflow-hidden rounded-sm">
+    <AspectRatio ratio={ratio} className="overflow-hidden rounded-[var(--radius-sm)]">
       <div className="relative h-full w-full">
         <div className="grid h-full w-full grid-cols-6 grid-rows-4 gap-1 absolute inset-0">
           <div className="relative col-span-4 row-span-4">

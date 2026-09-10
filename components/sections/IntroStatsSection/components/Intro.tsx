@@ -42,7 +42,7 @@ export default function Intro({
         <Image
           src={image}
           alt={imageAlt}
-          className="aspect-[4/3] w-full rounded-[4px] object-cover min-[1024px]:aspect-[4/5]"
+          className="aspect-[4/3] w-full rounded-[var(--radius-sm)] object-cover min-[1024px]:aspect-[4/5]"
           quality={85}
           priority={false}
         />

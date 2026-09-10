@@ -1,15 +1,15 @@
 import type { GallerySectionProps } from "@/components/sections/GallerySection/types";
 
-import Gallery1 from "@/assets/gallery-1.jpg";
-import Gallery2 from "@/assets/gallery-2.jpg";
-import Gallery3 from "@/assets/gallery-3.jpg";
-import Gallery4 from "@/assets/gallery-4.jpg";
-import Gallery5 from "@/assets/gallery-5.jpg";
-import Gallery6 from "@/assets/gallery-6.jpg";
-import Gallery7 from "@/assets/gallery-7.jpg";
-import Gallery8 from "@/assets/gallery-8.jpg";
-import Gallery9 from "@/assets/gallery-9.jpg";
-import Gallery10 from "@/assets/gallery-10.jpg";
+import Gallery1 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_30 AM (1).png";
+import Gallery2 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (2).png";
+import Gallery3 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (3).png";
+import Gallery4 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_32 AM (4).png";
+import Gallery5 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_33 AM (5).png";
+import Gallery6 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (1).png";
+import Gallery7 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (2).png";
+import Gallery8 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_54 AM (3).png";
+import Gallery9 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_55 AM (4).png";
+import Gallery10 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_57 AM (5).png";
 
 const galleryData: GallerySectionProps = {
   title: "Our Students Gallery",
