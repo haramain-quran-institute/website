@@ -5,9 +5,7 @@ export interface RouteSeo {
   secondaryIntents: string[];
 }
 
-export const siteUrl = (
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://haramainquraninstitute.com"
-).replace(/\/$/, "");
+export const siteUrl = "https://haramainquraninstitute.com";
 
 export const routeSeo: Record<string, RouteSeo> = {
   "/": {

@@ -10,6 +10,16 @@ const nextConfig: NextConfig = {
   images: {
     qualities: [75, 85, 95],
   },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.haramainquraninstitute.com" }],
+        destination: "https://haramainquraninstitute.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
