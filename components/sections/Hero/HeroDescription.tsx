@@ -15,7 +15,7 @@ const HeroDescription: React.FC<HeroDescriptionProps> = ({
 
   return (
     <p
-      className="max-w-2xl text-center font-body text-body_sm leading-relaxed text-[#C7C1B9] md:text-body_base lg:text-body_xl
+      className="max-w-[min(36rem,92vw)] text-center font-body text-base leading-7 text-[#C7C1B9] md:max-w-2xl md:text-[17px] md:leading-8 lg:text-body_xl
       [&_strong]:font-semibold
       [&_strong]:text-white"
       dangerouslySetInnerHTML={{ __html: highlighted }}

@@ -112,10 +112,13 @@
   }
 
   * { @apply border-border; }
-  html { scroll-behavior: smooth; }
-  body { @apply bg-ChampagneSilk text-foreground antialiased; font-family: var(--font-body); }
-  h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); letter-spacing: 0; }
+  html { overflow-x: clip; scroll-behavior: smooth; }
+  body { @apply bg-ChampagneSilk text-foreground antialiased; overflow-x: clip; font-family: var(--font-body); }
+  h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); letter-spacing: 0; overflow-wrap: anywhere; text-wrap: balance; }
   p, span, a, button, input, textarea, select, label, li { font-family: var(--font-body); }
+  img, video, canvas, svg { max-width: 100%; }
+  button, input, select, textarea { font-size: max(1rem, 16px); }
+  button, a, input, select, textarea { min-width: 0; }
 }
 
 @utility font-heading { font-family: var(--font-heading); }
@@ -127,8 +130,9 @@
   margin-inline: auto;
   width: 100%;
   max-width: var(--breakpoint-xl);
-  padding-inline: 1.25rem;
+  padding-inline: 1rem;
 
+  @media (width >= 375px) { padding-inline: 1.25rem; }
   @media (width >= 576px) { padding-inline: 2rem; }
   @media (width >= 768px) { padding-inline: 3rem; }
   @media (width >= 992px) { padding-inline: 4rem; }
@@ -146,10 +150,133 @@
 }
 
 @media (width < 768px) {
+  section[class*="py-20"],
+  section[class*="py-24"],
+  section[class*="py-28"],
+  section[class*="py-32"] {
+    padding-block: clamp(3.75rem, 12vw, 5.5rem);
+  }
+
+  section[class*="pt-40"] {
+    padding-top: clamp(7.5rem, 24vw, 9rem);
+  }
+
+  section[class*="pb-20"],
+  section[class*="pb-24"] {
+    padding-bottom: clamp(3.75rem, 12vw, 5.25rem);
+  }
+
+  [class*="mt-14"] {
+    margin-top: clamp(2.25rem, 9vw, 3.25rem);
+  }
+
+  [class*="gap-16"],
+  [class*="gap-20"],
+  [class*="gap-28"] {
+    gap: clamp(2.25rem, 9vw, 3.5rem);
+  }
+
+  h1,
+  .text-5xl,
+  .text-6xl,
+  .text-\[78px\],
+  .text-\[80px\],
+  .text-\[88px\],
+  .text-\[104px\] {
+    font-size: clamp(2.65rem, 13vw, 4rem) !important;
+    line-height: 0.98 !important;
+  }
+
+  h2,
+  .text-4xl,
+  .text-\[58px\],
+  .text-\[72px\] {
+    font-size: clamp(2.15rem, 10vw, 3.25rem) !important;
+    line-height: 1.06 !important;
+  }
+
+  h3,
+  .text-3xl,
+  .text-\[32px\] {
+    font-size: clamp(1.65rem, 7vw, 2.25rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  .text-2xl,
+  .text-\[23px\],
+  .text-\[22px\] {
+    font-size: clamp(1.25rem, 5.8vw, 1.55rem) !important;
+    line-height: 1.18 !important;
+  }
+
+  .text-lg,
+  .text-xl {
+    line-height: 1.45;
+  }
+
+  p,
+  li {
+    line-height: 1.65;
+  }
+
+  a[class*="px-7"],
+  button[class*="px-7"],
+  a[class*="px-9"],
+  button[class*="px-9"] {
+    padding-inline: clamp(1rem, 5vw, 1.5rem);
+  }
+
+  a[class*="py-4"],
+  button[class*="py-4"] {
+    padding-block: 0.9rem;
+  }
+
+  [class*="grid-cols-2"] {
+    min-width: 0;
+  }
+
   .text-\[9px\],
   .text-\[10px\],
   .text-\[11px\] {
     font-size: 0.75rem;
+  }
+}
+
+@media (width <= 390px) {
+  h1,
+  .text-5xl,
+  .text-6xl,
+  .text-\[78px\],
+  .text-\[80px\],
+  .text-\[88px\],
+  .text-\[104px\] {
+    font-size: clamp(2.35rem, 12vw, 3.25rem) !important;
+  }
+
+  .container {
+    padding-inline: 0.9rem;
+  }
+}
+
+@media (width >= 768px) and (width < 1100px) {
+  section[class*="py-24"],
+  section[class*="py-28"],
+  section[class*="py-32"] {
+    padding-block: clamp(5rem, 9vw, 7rem);
+  }
+
+  h1,
+  .text-\[78px\],
+  .text-\[80px\],
+  .text-\[88px\],
+  .text-\[104px\] {
+    font-size: clamp(4rem, 7.2vw, 5.4rem) !important;
+  }
+
+  h2,
+  .text-\[58px\],
+  .text-\[72px\] {
+    font-size: clamp(3.2rem, 6vw, 4.4rem) !important;
   }
 }
 

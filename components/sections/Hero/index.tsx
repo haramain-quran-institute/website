@@ -43,7 +43,7 @@ export default function HeroSection({
     <>
       <section
         id="HeroSection"
-        className="relative flex min-h-svh w-full items-center overflow-hidden"
+        className="relative flex min-h-[min(720px,100svh)] w-full items-center overflow-hidden lg:min-h-svh"
         aria-label="Hero Section"
       >
         <Image
@@ -66,7 +66,7 @@ export default function HeroSection({
           aria-hidden="true"
         />
 
-        <div className="container relative z-20 flex min-h-svh items-center justify-center pt-44 pb-32 md:pt-52">
+        <div className="container relative z-20 flex min-h-[min(720px,100svh)] items-center justify-center pb-28 pt-36 sm:pb-32 sm:pt-40 md:pt-44 lg:min-h-svh lg:pb-32 lg:pt-52">
           <div className="flex w-full max-w-6xl flex-col items-center text-center">
             {stats && (
               <div className="mb-8">
@@ -82,7 +82,7 @@ export default function HeroSection({
               <HeroDescription description={description} />
             </div>
 
-            <div className="mt-10">
+            <div className="mt-8 w-full sm:mt-10 sm:w-auto">
               <HeroCTA
                 btnPrimaryText={btnPrimaryText}
                 btnSecondaryText={btnSecondaryText}
