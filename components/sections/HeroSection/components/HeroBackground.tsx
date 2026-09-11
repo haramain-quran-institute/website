@@ -64,7 +64,7 @@ export default function HeroBackground(props: HeroBackgroundProps) {
         controls={false}
         className="absolute inset-0 size-full object-cover [--media-object-fit:cover] [--media-object-position:center]"
         style={{ aspectRatio: "none" }}
-        preload="auto"
+        preload="metadata"
         onCanPlay={() => setVideoReady(true)}
         onLoadedData={() => setVideoReady(true)}
         onPlay={() => setVideoReady(true)}
