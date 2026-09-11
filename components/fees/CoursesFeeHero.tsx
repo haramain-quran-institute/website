@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, BadgePercent, CalendarDays, WalletCards } from "lucide-react";
 
-import heroImage from "@/assets/CoursesFee-Images/hero.png";
+import heroImage from "@/assets/CoursesFee-Images/hero.webp";
 
 export default function CoursesFeeHero() {
   return (

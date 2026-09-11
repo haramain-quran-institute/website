@@ -5,7 +5,7 @@ import {
   Users,
 } from "lucide-react";
 
-import HeroBackgroundImg from "@/assets/Home-Images/hero.png";
+import HeroBackgroundImg from "@/assets/Home-Images/hero.webp";
 import type { IntroStatsSectionProps } from "@/components/sections/IntroStatsSection/types";
 
 const introStatsData: IntroStatsSectionProps = {

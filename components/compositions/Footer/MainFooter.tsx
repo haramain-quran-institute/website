@@ -10,7 +10,7 @@ import {
   YouTubeIcon,
 } from "@/assets/Icons";
 import { instituteContact, instituteSocialLinks } from "@/data/site-contact";
-import FooterLogo from "@/assets/FooterLogo.png";
+import FooterLogo from "@/assets/FooterLogo.webp";
 import type { FooterProps } from "./types/links";
 
 const socialLinks = [

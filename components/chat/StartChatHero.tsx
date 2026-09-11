@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Bot, MessageCircleMore, Sparkles } from "lucide-react";
-import heroImage from "@/assets/Home-Images/hero.png";
+import heroImage from "@/assets/Home-Images/hero.webp";
 
 export default function StartChatHero() {
   return <section className="relative flex min-h-[580px] items-end overflow-hidden pb-16 pt-40 text-white md:min-h-[650px] md:pb-20">

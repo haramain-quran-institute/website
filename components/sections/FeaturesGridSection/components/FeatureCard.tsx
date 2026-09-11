@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { FeatureCardProps } from "../types";
-import SectionWatermark from "@/assets/IconForSectionsLowTransparency.png";
+import SectionWatermark from "@/assets/IconForSectionsLowTransparency.webp";
 
 import {
   BookOpen,

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, CalendarDays, Clock3, Globe2 } from "lucide-react";
 
-import heroImage from "@/assets/BookFreeTrial-Images/hero.png";
+import heroImage from "@/assets/BookFreeTrial-Images/hero.webp";
 
 export default function BookTrialHero() {
   return <section className="relative flex min-h-[650px] items-end overflow-hidden pb-20 pt-40 text-white min-[768px]:min-h-[720px] min-[1024px]:pb-24">

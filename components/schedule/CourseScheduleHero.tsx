@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock3, Globe2, CalendarCheck2 } from "lucide-react";
 
-import heroImage from "@/assets/CourseSchedule-Images/hero.png";
+import heroImage from "@/assets/CourseSchedule-Images/hero.webp";
 
 export default function CourseScheduleHero() {
   return (

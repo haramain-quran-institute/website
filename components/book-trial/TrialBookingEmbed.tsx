@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Check, CheckCircle2, Clock3, Globe2, Mail, Messa
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FormEvent, useEffect, useMemo, useState } from "react";
-import FormIcon from "@/assets/IconForSectionsLowTransparency.png";
+import FormIcon from "@/assets/IconForSectionsLowTransparency.webp";
 import { sendTrialBooking } from "@/components/booking/actions/sendTrialBooking";
 import { PhoneNumberField, readCompletePhoneNumber, TimeZoneSelect } from "@/components/booking/BookingFields";
 

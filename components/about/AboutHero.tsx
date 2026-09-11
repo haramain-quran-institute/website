@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, BookOpenCheck, HeartHandshake, UsersRound } from "lucide-react";
 
-import heroImage from "@/assets/AboutUs-Images/hero.png";
+import heroImage from "@/assets/AboutUs-Images/hero.webp";
 
 export default function AboutHero() {
   return (

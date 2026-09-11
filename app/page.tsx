@@ -11,7 +11,7 @@ import { SiteFooter } from "@/components/landing/site-footer";
 import faqSectionData from "@/data/Home/faqSectionData";
 import galleryData from "@/data/Home/gallerySectionData";
 import testimonialsData from "@/data/Home/testimonialsSectionData";
-import heroImage from "@/assets/Home-Images/hero.png";
+import heroImage from "@/assets/Home-Images/hero.webp";
 import { routeSeo, siteUrl } from "@/data/seo";
 import WinterCoursePopup from "@/components/home/WinterCoursePopup";
 

@@ -12,7 +12,7 @@ import {
   UserRoundCheck,
 } from "lucide-react";
 
-import courseScheduleFeatureImage from "@/assets/CourseSchedule-Images/feature.png";
+import courseScheduleFeatureImage from "@/assets/CourseSchedule-Images/feature.webp";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import FAQSection from "@/components/sections/FAQSection";

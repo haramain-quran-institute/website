@@ -1,5 +1,5 @@
 import { OverviewComposition } from "@/components/course/CourseOverview";
-import coursesFeeFeatureImage from "@/assets/CoursesFee-Images/feature.png";
+import coursesFeeFeatureImage from "@/assets/CoursesFee-Images/feature.webp";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import FAQSection from "@/components/sections/FAQSection";

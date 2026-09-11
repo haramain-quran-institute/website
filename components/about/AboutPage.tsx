@@ -1,6 +1,6 @@
 import { BookOpenCheck, Globe2, GraduationCap, UsersRound } from "lucide-react";
 
-import aboutFeatureImage from "@/assets/AboutUs-Images/feature.png";
+import aboutFeatureImage from "@/assets/AboutUs-Images/feature.webp";
 import { OverviewComposition, type OverviewCounter } from "@/components/course/CourseOverview";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";

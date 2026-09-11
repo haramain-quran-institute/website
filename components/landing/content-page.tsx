@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, CalendarDays, HeartHandshake } from "lucide-react";
 
-import heroImage from "@/assets/Home-Images/hero.png";
+import heroImage from "@/assets/Home-Images/hero.webp";
 import { navigationItems, type NavigationItem } from "@/data/navigation";
 import { SiteHeader } from "./site-header";
 import { SiteFooter } from "./site-footer";

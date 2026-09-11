@@ -1,7 +1,7 @@
 import Image, { type StaticImageData } from "next/image";
 import type { LucideIcon } from "lucide-react";
 
-import defaultImage from "@/assets/CourseSchedule-Images/feature.png";
+import defaultImage from "@/assets/CourseSchedule-Images/feature.webp";
 
 export interface AvailabilityFeature {
   title: string;

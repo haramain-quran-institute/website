@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, CalendarDays, GraduationCap, UserRound } from "lucide-react";
 
-import fallbackHeroImage from "@/assets/Home-Images/hero.png";
+import fallbackHeroImage from "@/assets/Home-Images/hero.webp";
 import { courseImages } from "@/data/course-images";
 import type { CoursePageData } from "@/data/course-pages";
 

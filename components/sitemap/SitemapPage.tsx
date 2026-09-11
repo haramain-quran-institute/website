@@ -1,7 +1,7 @@
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import PolicyHero from "@/components/policies/PolicyHero";
-import sitemapHero from "@/assets/Sitemap-Images/hero.png";
+import sitemapHero from "@/assets/Sitemap-Images/hero.webp";
 
 import SitemapDirectory from "./SitemapDirectory";
 

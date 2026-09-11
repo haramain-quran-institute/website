@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, BookOpenText, Clock3, FileText } from "lucide-react";
 
-import tajweedeQuranHero from "@/assets/TajweedeQuran-Images/Tajeede Quran Hero.png";
-import tajweedeQaidaHero from "@/assets/TajweedeQaida-Images/Tajweede Qaida Hero.png";
-import namazBookHero from "@/assets/NamazBook-Images/Nimaaz Book hero.png";
-import kalmaBookHero from "@/assets/KalmaBook-Images/kalma Book hero.png";
-import fallbackHero from "@/assets/Home-Images/hero.png";
+import tajweedeQuranHero from "@/assets/TajweedeQuran-Images/Tajeede Quran Hero.webp";
+import tajweedeQaidaHero from "@/assets/TajweedeQaida-Images/Tajweede Qaida Hero.webp";
+import namazBookHero from "@/assets/NamazBook-Images/Nimaaz Book hero.webp";
+import kalmaBookHero from "@/assets/KalmaBook-Images/kalma Book hero.webp";
+import fallbackHero from "@/assets/Home-Images/hero.webp";
 import type { ResourcePageConfig } from "./resource-data";
 
 const images = {

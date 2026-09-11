@@ -52,7 +52,7 @@ export default function HeroSection({
           fetchPriority="high"
           fill
           className="z-0 object-cover"
-          quality={95}
+          quality={80}
         />
 
         <div

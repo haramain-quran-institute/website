@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, BookOpenCheck, PlayCircle, Sparkles } from "lucide-react";
 
-import heroImage from "@/assets/OurSessions-Images/hero.png";
+import heroImage from "@/assets/OurSessions-Images/hero.webp";
 
 export default function OurSessionsHero() {
   return (

@@ -1,8 +1,16 @@
 node_modules/
 node_modules*/
 .next/
+.turbo/
 next-build/
 .vercel/
+coverage/
+dist/
+out/
+.cache/
+tmp/
+temp/
+*.log
 *.tsbuildinfo
 .env*
 !.env.example

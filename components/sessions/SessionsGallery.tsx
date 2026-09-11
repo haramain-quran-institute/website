@@ -4,7 +4,7 @@ import Image, { type StaticImageData } from "next/image";
 import { Play, SlidersHorizontal, X } from "lucide-react";
 import { useMemo, useState } from "react";
 
-import sessionThumbnail from "@/assets/OurSessions-Images/thumbnail.png";
+import sessionThumbnail from "@/assets/OurSessions-Images/thumbnail.webp";
 
 type Category = "Quran" | "Tajweed" | "Islamic Guidance" | "Short Reminders" | "Kids" | "Lectures" | "Motivations";
 type SortOption = "Latest" | "Popular" | "Oldest";

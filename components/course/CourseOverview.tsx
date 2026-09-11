@@ -7,7 +7,7 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-import fallbackOverviewImage from "@/assets/Home-Images/hero.png";
+import fallbackOverviewImage from "@/assets/Home-Images/hero.webp";
 import { courseImages } from "@/data/course-images";
 import type { CoursePageData } from "@/data/course-pages";
 

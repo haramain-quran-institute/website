@@ -29,7 +29,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import HeaderLogo from "@/assets/HeaderLogo.png";
+import HeaderLogo from "@/assets/HeaderLogo.webp";
 
 function InstituteMark() {
   return (

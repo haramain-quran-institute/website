@@ -1,25 +1,25 @@
 import type { StaticImageData } from "next/image";
 
-import arabicFeature from "@/assets/ArabicLanguage-Images/feature.png";
-import arabicHero from "@/assets/ArabicLanguage-Images/hero.png";
-import islamicStudiesFeature from "@/assets/IslamicStudies-Images/feature.png";
-import islamicStudiesHero from "@/assets/IslamicStudies-Images/hero.png";
-import nasheedFeature from "@/assets/NasheedReciting-Images/feature.png";
-import nasheedHero from "@/assets/NasheedReciting-Images/hero.png";
-import nooraniQaidaFeature from "@/assets/NooraniQaida-Images/feature.png";
-import nooraniQaidaHero from "@/assets/NooraniQaida-Images/hero.png";
-import qiratTajweedFeature from "@/assets/QiratTajweed-Images/feature.png";
-import qiratTajweedHero from "@/assets/QiratTajweed-Images/hero.png";
-import memorizationFeature from "@/assets/QuranMemorization-Images/Quran Memorization Feature Sec.png";
-import memorizationHero from "@/assets/QuranMemorization-Images/Quran Memorization hero.png";
-import readingFeature from "@/assets/QuranReading-Images/Quran Reading Feature Section.png";
-import readingHero from "@/assets/QuranReading-Images/Quran Reading Hero.png";
-import translationFeature from "@/assets/QuranTranslation-Images/Quran translation Feature section.png";
-import translationHero from "@/assets/QuranTranslation-Images/Quran Translation Hero.png";
-import tafsirFeature from "@/assets/Tafsir-Images/feature.png";
-import tafsirHero from "@/assets/Tafsir-Images/hero.png";
-import womenGuidanceFeature from "@/assets/WomenGuidance-Images/feature.png";
-import womenGuidanceHero from "@/assets/WomenGuidance-Images/hero.png";
+import arabicFeature from "@/assets/ArabicLanguage-Images/feature.webp";
+import arabicHero from "@/assets/ArabicLanguage-Images/hero.webp";
+import islamicStudiesFeature from "@/assets/IslamicStudies-Images/feature.webp";
+import islamicStudiesHero from "@/assets/IslamicStudies-Images/hero.webp";
+import nasheedFeature from "@/assets/NasheedReciting-Images/feature.webp";
+import nasheedHero from "@/assets/NasheedReciting-Images/hero.webp";
+import nooraniQaidaFeature from "@/assets/NooraniQaida-Images/feature.webp";
+import nooraniQaidaHero from "@/assets/NooraniQaida-Images/hero.webp";
+import qiratTajweedFeature from "@/assets/QiratTajweed-Images/feature.webp";
+import qiratTajweedHero from "@/assets/QiratTajweed-Images/hero.webp";
+import memorizationFeature from "@/assets/QuranMemorization-Images/Quran Memorization Feature Sec.webp";
+import memorizationHero from "@/assets/QuranMemorization-Images/Quran Memorization hero.webp";
+import readingFeature from "@/assets/QuranReading-Images/Quran Reading Feature Section.webp";
+import readingHero from "@/assets/QuranReading-Images/Quran Reading Hero.webp";
+import translationFeature from "@/assets/QuranTranslation-Images/Quran translation Feature section.webp";
+import translationHero from "@/assets/QuranTranslation-Images/Quran Translation Hero.webp";
+import tafsirFeature from "@/assets/Tafsir-Images/feature.webp";
+import tafsirHero from "@/assets/Tafsir-Images/hero.webp";
+import womenGuidanceFeature from "@/assets/WomenGuidance-Images/feature.webp";
+import womenGuidanceHero from "@/assets/WomenGuidance-Images/hero.webp";
 
 interface CourseImageSet {
   hero: StaticImageData;

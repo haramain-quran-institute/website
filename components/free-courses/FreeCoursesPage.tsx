@@ -1,6 +1,6 @@
 import { ArrowUpRight, BookHeart, BookOpenCheck, CircleUserRound, GraduationCap, HeartHandshake, Lightbulb, ListChecks, UsersRound } from "lucide-react";
 
-import freeCoursesFeatureImage from "@/assets/FreeCourses-Images/feature.png";
+import freeCoursesFeatureImage from "@/assets/FreeCourses-Images/feature.webp";
 import { OverviewComposition, type OverviewCounter } from "@/components/course/CourseOverview";
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";

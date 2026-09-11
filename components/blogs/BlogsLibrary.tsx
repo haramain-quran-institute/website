@@ -4,16 +4,16 @@ import Image, { type StaticImageData } from "next/image";
 import { ArrowUpRight, BookOpenText, CalendarDays, CheckCircle2, Clock3, Quote, SlidersHorizontal, UserRound, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
-import imageOne from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_30 AM (1).png";
-import imageTwo from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (2).png";
-import imageThree from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (3).png";
-import imageFour from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_32 AM (4).png";
-import imageFive from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_33 AM (5).png";
-import imageSix from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (1).png";
-import imageSeven from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (2).png";
-import imageEight from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_54 AM (3).png";
-import imageNine from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_55 AM (4).png";
-import imageTen from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_57 AM (5).png";
+import imageOne from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_30 AM (1).webp";
+import imageTwo from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (2).webp";
+import imageThree from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (3).webp";
+import imageFour from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_32 AM (4).webp";
+import imageFive from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_33 AM (5).webp";
+import imageSix from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (1).webp";
+import imageSeven from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (2).webp";
+import imageEight from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_54 AM (3).webp";
+import imageNine from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_55 AM (4).webp";
+import imageTen from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_57 AM (5).webp";
 
 type Category = "Quran Learning" | "Tajweed" | "Hifz & Memorization" | "Islamic Studies" | "Kids & Parenting" | "Duas & Guidance" | "Muslim Lifestyle";
 type SortOption = "Latest" | "Popular" | "Featured";

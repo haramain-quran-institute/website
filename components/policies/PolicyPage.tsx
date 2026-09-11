@@ -1,9 +1,9 @@
 import { SiteFooter } from "@/components/landing/site-footer";
 import { SiteHeader } from "@/components/landing/site-header";
 import type { PolicyPageData } from "@/data/policies";
-import privacyPolicyHero from "@/assets/PrivacyPolicy-Images/hero.png";
-import termsAndConditionsHero from "@/assets/TermsAndConditions-Images/hero.png";
-import paymentPolicyHero from "@/assets/PaymentPolicy-Images/hero.png";
+import privacyPolicyHero from "@/assets/PrivacyPolicy-Images/hero.webp";
+import termsAndConditionsHero from "@/assets/TermsAndConditions-Images/hero.webp";
+import paymentPolicyHero from "@/assets/PaymentPolicy-Images/hero.webp";
 
 import PolicyContent from "./PolicyContent";
 import PolicyHero from "./PolicyHero";

@@ -1,15 +1,15 @@
 import type { GallerySectionProps } from "@/components/sections/GallerySection/types";
 
-import Gallery1 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_30 AM (1).png";
-import Gallery2 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (2).png";
-import Gallery3 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (3).png";
-import Gallery4 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_32 AM (4).png";
-import Gallery5 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_33 AM (5).png";
-import Gallery6 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (1).png";
-import Gallery7 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (2).png";
-import Gallery8 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_54 AM (3).png";
-import Gallery9 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_55 AM (4).png";
-import Gallery10 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_57 AM (5).png";
+import Gallery1 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_30 AM (1).webp";
+import Gallery2 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (2).webp";
+import Gallery3 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_31 AM (3).webp";
+import Gallery4 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_32 AM (4).webp";
+import Gallery5 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_24_33 AM (5).webp";
+import Gallery6 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (1).webp";
+import Gallery7 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_53 AM (2).webp";
+import Gallery8 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_54 AM (3).webp";
+import Gallery9 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_55 AM (4).webp";
+import Gallery10 from "@/assets/GalleryImages/ChatGPT Image Sep 9, 2026, 11_27_57 AM (5).webp";
 
 const galleryData: GallerySectionProps = {
   title: "Our Students Gallery",

@@ -1,4 +1,4 @@
-import Image from "@/assets/Home-Images/hero.png";
+import Image from "@/assets/Home-Images/hero.webp";
 import type { HeroSectionProps } from "@/components/sections/HeroSection/types";
 
 const heroData: HeroSectionProps = {

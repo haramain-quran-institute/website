@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useContext, useEffect, useRef, useState } from "react";
 import { FormPopupContext } from "@/context/FormPopupContext";
 
-import BackgroundImage from "@/assets/FooterCTA-Images/footercta.jpg";
+import BackgroundImage from "@/assets/FooterCTA-Images/footercta.webp";
 
 export default function FooterCTA() {
   const { openFormPopup } = useContext(FormPopupContext);

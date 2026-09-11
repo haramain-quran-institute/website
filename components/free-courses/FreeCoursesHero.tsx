@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, BookOpenCheck, Gift, UsersRound } from "lucide-react";
 
-import heroImage from "@/assets/FreeCourses-Images/hero.png";
+import heroImage from "@/assets/FreeCourses-Images/hero.webp";
 
 export default function FreeCoursesHero() {
   return (

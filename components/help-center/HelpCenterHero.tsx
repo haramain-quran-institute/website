@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Clock3, Globe2, Headphones } from "lucide-react";
 
-import heroImage from "@/assets/HelpCenter-Images/hero.png";
+import heroImage from "@/assets/HelpCenter-Images/hero.webp";
 
 export default function HelpCenterHero() {
   return (
