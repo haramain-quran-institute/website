@@ -49,6 +49,7 @@ export default function HeroSection({
           alt={backgroundImgAlt}
           sizes="100vw"
           priority
+          fetchPriority="high"
           fill
           className="z-0 object-cover"
           quality={95}

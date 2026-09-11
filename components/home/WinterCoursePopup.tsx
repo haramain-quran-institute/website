@@ -2,7 +2,7 @@
 
 import * as Dialog from "@radix-ui/react-dialog";
 import { CheckCircle2, Mail, X } from "lucide-react";
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 
@@ -11,11 +11,17 @@ import styles from "./WinterCoursePopup.module.css";
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function WinterCoursePopup() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [pending, setPending] = useState(false);
+
+  useEffect(() => {
+    const popupTimer = window.setTimeout(() => setOpen(true), 2800);
+
+    return () => window.clearTimeout(popupTimer);
+  }, []);
 
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
